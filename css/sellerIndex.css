@@ -686,7 +686,6 @@ body {
 .fold :nth-child(1) {
     font-size: 14px;
     font-weight: 500;
-    /* line-height: 16.8px; */
     color: #EE4D2D;
     z-index: 2;
     position: absolute;
@@ -697,7 +696,6 @@ body {
 .fold :nth-child(2) {
     font-size: 14px;
     font-weight: 500;
-    /* line-height: 16.8px; */
     color: #EE4D2D;
     z-index: 2;
     position: absolute;
@@ -713,8 +711,8 @@ body {
     top: 0;
     right: 0;
     border-bottom: 4px solid transparent;
-    border-left: 20px solid rgba(255, 191, 53, 0.9);
-    border-right: 20px solid rgb(255, 191, 53, 0.9);
+    border-left: 20px solid rgba(255, 191, 53, 0.6);
+    border-right: 20px solid rgb(255, 191, 53, 0.6);
 }
 
 .shop-search-container-right-pages {
