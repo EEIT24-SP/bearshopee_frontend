@@ -510,7 +510,6 @@ body {
 .evaluation {
     height: 16px;
     width: 100%;
-    /* margin: 5px 0 0 0; */
     display: flex;
     cursor: pointer;
     justify-content: space-between;
