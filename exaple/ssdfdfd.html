@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+    <style>
+        #success-msg {
+            border-radius: 10px;
+            height: 200px;
+
+            width: 400px;
+
+            background: rgb(159, 247, 76);
+
+            display: block;
+
+            opacity: 0;
+
+            transition: all 1s;
+
+            -wekit-transition: all 1s;
+
+            -moz-transition: all 1s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="waithide()"></button>
+    <div id="success-msg"  style="display: flex;align-items: center;justify-content: center;">
+        <div
+            style="background-color: rgb(255, 255, 255);width: 300px;display: flex;align-items: center;justify-content: center;flex-direction: column;border-radius: 10px;">
+            <img src="./img/tick.png" alt="">
+            <div>成功加入購物車！</div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function waithide() {
+
+            var obj = document.getElementById("success-msg");
+            obj.style.opacity = '1';
+            window.setTimeout(
+                function removethis() {
+                    obj.style.opacity = '0';
+                }, 1000);
+
+        }
+    </script>
+</body>
+
+</html>
