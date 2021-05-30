@@ -142,13 +142,13 @@ body {
 }
 
 .halo {
-    width: 77px;
-    height: 77px;
+    width: 80px;
+    height: 80px;
     border-radius: 60px;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
-    top: -2.5px;
-    left: -3px;
+    top: -4px;
+    left: -4px;
 }
 
 .section-seller-overview-horizontal-seller-name-container {
@@ -393,58 +393,75 @@ body {
     padding: 20px 30px;
 }
 
-.discount-ticket-container{
+.discount-ticket-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-   
+    margin: 0 0 0 30px;
 }
 
-.discount-ticket{
+.discount-ticket {
     display: flex;
     position: relative;
 }
 
 .ticket {
-    background-color: rgb(255, 233, 224);
-    width: 280px;
+    background-color: #fdefed;
+    width: 300px;
     height: 100px;
-    margin:  0 15px 0 10px;
+    margin: 0 20px 0 10px;
     display: flex;
     justify-content: space-around;
+    border-top: rgb(255, 198, 175) 1px solid;
+    border-right: rgb(255, 198, 175) 1px solid;
+    border-bottom: rgb(255, 198, 175) 1px solid;
+    box-shadow: 3px 2px 5px -2px #A3A3A3;
 }
 
-.ticket:before{   
+.ticket:before {
     left: 0;
     content: "";
     position: absolute;
     width: 10px;
-    height: 100%;
-    background: linear-gradient(45deg,
-            transparent 33.333%,
-            rgb(255, 233, 224) 33.333%,
-            rgb(255, 233, 224) 66.667%,
-            transparent 66.667%),
-        linear-gradient(-45deg,
-            transparent 33.333%,
-            rgb(255, 233, 224) 33.333%,
-            rgb(255, 233, 224) 66.667%,
-            transparent 66.667%);
+    height: 99px;
+    background: linear-gradient(45deg, transparent 33.333%, #fdefed 33.333%, #fdefed 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, #fdefed 33.333%, #fdefed 66.667%, transparent 66.667%);
     background-size: 20px 10px;
-
+    border-top: rgb(255, 198, 175) 1px solid;
+    border-bottom: rgb(255, 198, 175) 1px solid;
 }
 
-.ticket > div {
+.ticket>div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin: 0 0 0 -20px;
+}
+
+.discount-price {
+    color: #EE4D2D;
+    margin: 0 0 7px 0;
+}
+
+.discount-Effective-date {
+    font-size: 12px;
+    line-height: 12px;
+    color: grey;
+}
+
+.get-discount-ticket{
+    height: 28px;
+    margin: 0 -30px 0 0;
+    padding: 0 15px 0 15px;
+    background-color: #EE4D2D;
+    color: white;
+    border:0;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .speech-bubble {
-	position: absolute;
-	background: #ffd333;
-	border-radius: 2px;
+    position: absolute;
+    background: #ffd333;
+    border-radius: 2px;
     width: 32px;
     height: 16px;
     font-size: 12px;
@@ -456,14 +473,14 @@ body {
 }
 
 .speech-bubble:after {
-	content: '';
-	position: absolute;
+    content: '';
+    position: absolute;
     top: 15px;
     left: 0;
-	width: 0;
-	height: 0;
-	border: 8px solid transparent;
-	border-top-color: #c4a227;
-	border-bottom: 0;
-	border-right: 0;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #c4a227;
+    border-bottom: 0;
+    border-right: 0;
 }
