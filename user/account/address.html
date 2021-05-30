@@ -87,64 +87,142 @@
 
         </div>
     </nav>
+
+
     <!-- ------------------------------------------------主頁面------------------------------------------------------------- -->
     <div class="main">
-        <table class="main-table">
-            <tr>
-                <td class="acc">
-                    <div onclick="btn_list_profile()">
-                        <img class="main-table-acc-img" src="../../img/Account.svg" alt="">
-                        <span class="main-left-list-name">我的帳戶</span>
+        <div style="display: flex">
+            <div style="width: 25%">
+                <div class="main-user-head">
+                    <div class="main-user-head-border">
+                        <img class="main-user-head-border-img" src="../../img/Bear.svg" alt="" />
                     </div>
-                    <ul id="acc-profile" class="acc-list">
-                        <li><a href="../../user/account/profile.html">個人檔案</a></li>
-                        <li>
-                            <a href="../../user/account/credit_card.html">銀行帳號/信用卡</a>
-                        </li>
-                        <li><a href="../../user/account/address.html">地址</a></li>
-                        <li><a href="../../user/account/password.html">更改密碼</a></li>
-                    </ul>
-                </td>
-            </tr>
 
-            <tr>
-                <td>
-                    <img class="main-table-acc-img" src="../../img/List.svg" alt="" />
-                    <span class="main-left-list-name">購買清單</span>
-                </td>
-            </tr>
-            <tr>
-                <td class="acc">
-                    <div onclick="btn_list_notice()">
-                        <img class="main-table-acc-img" src="../../img/Notice.svg" alt="">
-                        <span class="main-left-list-name">通知總覽</span>
+                    <div class="main-user-head-text">
+                        <div class="main-user-head-text-a">
+                            <div class="main-user-head-text-b">
+                                <div>使用者名稱</div>
+                                <div>
+                                    <a href="../../user/account/profile.html">編輯個人檔案</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul id="acc-notice" class="acc-list">
-                        <li><a href="../../user/account/profile.html">訂單更新通知</a></li>
-                        <li>
-                            <a href="../../user/account/credit_card.html">促銷活動相關通知</a>
-                        </li>
-                        <li><a href="../../user/account/address.html">錢包更新</a></li>
-                        <li><a href="../../user/account/password.html">動態通知</a></li>
-                        <li><a href="../../user/account/password.html">評價通知</a></li>
-                        <li><a href="../../user/account/password.html">熊熊通知</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="main-table-acc-img" src="../../img/Coupon.svg" alt=""
-                        style="width: 20px; margin: 0px 0px -4px 0px" />
-                    <span class="main-left-list-name">我的優惠券</span>
-                </td>
-            </tr>
-        </table>
-        <div class="main-right">
-            <div id="main-right-list-1" class="main-right-list">
-                <div class="main-right-content">
-                    <img src="../../img/List.svg" alt="" />
-                    <h2>address</h2>
                 </div>
+                <br />
+                <table class="main-table">
+                    <tr>
+                        <td class="acc">
+                            <div onclick="btn_list_profile()">
+                                <img class="main-table-acc-img" src="../../img/Account.svg" alt="" />
+                                <span class="main-left-list-name">我的帳戶</span>
+                            </div>
+                            <ul id="acc-profile" class="acc-list">
+                                <li>
+                                    <a href="../../user/account/profile.html">個人檔案</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/credit_card.html">銀行帳號/信用卡</a>
+                                </li>
+                                <li><a href="../../user/account/address.html">地址</a></li>
+                                <li>
+                                    <a href="../../user/account/password.html">更改密碼</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="main-table-acc-img" src="../../img/List.svg" alt="" />
+                            <span class="main-left-list-name">購買清單</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="acc">
+                            <div onclick="btn_list_notice()">
+                                <img class="main-table-acc-img" src="../../img/Notice.svg" alt="" />
+                                <span class="main-left-list-name">通知總覽</span>
+                            </div>
+                            <ul id="acc-notice" class="acc-list">
+                                <li>
+                                    <a href="../../user/account/profile.html">訂單更新通知</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/credit_card.html">促銷活動相關通知</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/address.html">錢包更新</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/password.html">動態通知</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/password.html">評價通知</a>
+                                </li>
+                                <li>
+                                    <a href="../../user/account/password.html">熊熊通知</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="main-table-acc-img" src="../../img/Coupon.svg" alt="" />
+                            <span class="main-left-list-name">我的優惠券</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="main-right-credit_card">
+                <div style="width: 90%;margin: auto;">
+                    <div class="main-right-credit_card-title">
+                        <div class="main-right-credit_card-title-desc">
+                            <span><b>我的信用卡</b></span> <br>
+                        </div>
+                        <div style="display: flex;justify-content: flex-end;width: 50%;">
+                            <div style="height: 40px; display: flex; justify-content:center;align-items: center;">
+                                <div>
+                                    <button class="main-right-profile-save-btn">
+                                        <div style="color: white;"><span></span> + 新增超商地址
+                                        </div>
+                                    </button>
+                                    <button class="main-right-profile-save-btn">
+                                        <div style="color: white;"><span></span> + 新增地址
+                                        </div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="
+                    display: flex;
+                    justify-content: left;
+                    border-top: 1px solid rgb(225, 225, 225);
+                  ">
+                        <div style="width: 90%;margin:10px 0px;">
+                            <div>
+                            <span style="margin: 5px 20px;">全名 </span>
+                            <span>XXX</span> </div>
+                            <div>
+                            <sapn style="margin: 5px 20px;">手機</sapn> <span>0919000000</span></div>
+                            <div> <span style="margin: 5px 20px;">超商</span> <span> 全家草屯東寶店</span></div>
+                           <div> <span style="margin: 5px 20px;">地址</span> <span>南投縣草屯鎮虎山路７６６號１樓 全家草屯東寶店</span></div>
+                           
+                        </div>
+
+                        <div style="display: flex;justify-content: center; width: 10%;">
+                            <div>
+                               刪除
+                            </div>
+
+                        </div>
+
+                </div>
+
             </div>
         </div>
     </div>
