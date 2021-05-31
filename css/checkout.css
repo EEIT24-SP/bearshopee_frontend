@@ -2,13 +2,13 @@ body {
     justify-content: center;
 }
 
-.Account-nav-bar {
+.checkout-nav-bar {
     height: 25px;
     width: 100%;
     background-color: orangered;
 }
 
-.account-header-title {
+.checkout-header-title {
     /* background-color: aquamarine; */
     height: 100px;
     width: 1248px;
@@ -23,7 +23,7 @@ body {
     border-bottom-right-radius: 3px;
 }
 
-.account-header-title-name {
+.checkout-header-title-name {
     height: 46px;
     width: 1182px;
     font-size: 24px;
@@ -32,12 +32,12 @@ body {
     margin: auto;
 }
 
-.account-header-title-name img {
+.checkout-header-title-name img {
     width: 40px;
     height: 40px;
 }
 
-.account-header-title-checkout {
+.checkout-header-title-checkout {
     font-size: 18px;
     height: 30px;
     width: 40px;
@@ -47,11 +47,11 @@ body {
     display: inline;
 }
 
-.account-order-detail {
+.checkout-order-detail {
     background-color: chocolate;
 }
 
-.account-order-discount-allshop-ticket {
+.checkout-order-discount-allshop-ticket {
     /* background-color: darkgoldenrod; */
     height: 100px;
     width: 1200px;
@@ -90,7 +90,7 @@ body {
     cursor: pointer;
 }
 
-.account-order-detail-title {
+.checkout-order-detail-title {
     height: 50px;
     width: 1140px;
     padding: 24px 30px 0 30px;
@@ -108,7 +108,7 @@ body {
     border-top: lightgrey 1px solid;
 }
 
-.account-order-detail-title-container {
+.checkout-order-detail-title-container {
     height: 30px;
     width: 1140px;
     display: flex;
@@ -157,7 +157,7 @@ body {
     /* background-color: teal; */
 }
 
-.account-order-detail-title-contanier {
+.checkout-order-detail-title-contanier {
     height: 50px;
     width: 1152px;
     padding: 0 30px 0 18px;
@@ -168,14 +168,14 @@ body {
     border-right: lightgrey 1px solid;
 }
 
-.account-order-detail-title-contanier img {
+.checkout-order-detail-title-contanier img {
     width: 15px;
     height: 15px;
     margin: 16px;
     cursor: pointer;
 }
 
-.account-order-detail-title-contanier p {
+.checkout-order-detail-title-contanier p {
     font-size: 14px;
     height: 16.6667px;
     width: 70px;
@@ -183,7 +183,7 @@ body {
     cursor: pointer;
 }
 
-.account-order-detail-title-contanier-talk {
+.checkout-order-detail-title-contanier-talk {
     font-size: 14px;
     color: rgb(218, 125, 49);
     height: 16.6667px;
@@ -194,14 +194,14 @@ body {
     cursor: pointer;
 }
 
-.account-order-detail-title-contanier-talk img {
+.checkout-order-detail-title-contanier-talk img {
     height: 30px;
     width: 28px;
     margin: -7px 1px 0px 5px;
     cursor: pointer;
 }
 
-.account-order-detail-title-contanier-content {
+.checkout-order-detail-title-contanier-content {
     height: 55px;
     width: 1200px;
     border-bottom: 1px dashed lightgrey;
@@ -214,7 +214,7 @@ body {
     border-right: lightgrey 1px solid;
 }
 
-.account-order-detail-title-contanier-content-a {
+.checkout-order-detail-title-contanier-content-a {
     height: 55px;
     width: 456px;
     display: flex;
@@ -222,13 +222,13 @@ body {
     margin: 0 0 0 30px;
 }
 
-.account-order-detail-title-contanier-content-a img {
+.checkout-order-detail-title-contanier-content-a img {
     height: 40px;
     width: 36.6667px;
     margin: 8px 5px;
 }
 
-.account-order-detail-title-contanier-content-a-ordername {
+.checkout-order-detail-title-contanier-content-a-ordername {
     font-size: 14px;
     height: 16.6667px;
     width: 389.333px;
@@ -237,14 +237,14 @@ body {
     display: flex;
 }
 
-.account-order-detail-title-contanier-content-a-select {
+.checkout-order-detail-title-contanier-content-a-select {
     height: 55px;
     width: 230px;
     display: flex;
     /* background-color: darkorange; */
 }
 
-.account-order-detail-title-contanier-content-a-select span {
+.checkout-order-detail-title-contanier-content-a-select span {
     font-size: 14px;
     color: rgb(153, 153, 153);
     height: 18px;
@@ -252,18 +252,18 @@ body {
     padding: 19px 0 0 16px;
 }
 
-.account-order-detail-title-contanier-content-a-unitprice {
+.checkout-order-detail-title-contanier-content-a-unitprice {
     height: 20px;
     width: 65px;
     margin: 20px 0px 0px 11px;
 }
 
-.account-order-detail-title-contanier-content-a-unitprice span {
+.checkout-order-detail-title-contanier-content-a-unitprice span {
     width: 50px;
     height: 50px;
 }
 
-.account-order-detail-title-contanier-content-a-quantity {
+.checkout-order-detail-title-contanier-content-a-quantity {
     /* background-color: darkred; */
     height: 55px;
     width: 116px;
@@ -271,12 +271,12 @@ body {
     justify-content: center;
 }
 
-.account-order-detail-title-contanier-content-a-quantity span {
+.checkout-order-detail-title-contanier-content-a-quantity span {
     display: flex;
     align-items: center;
 }
 
-.account-order-detail-title-contanier-content-a-totalprice {
+.checkout-order-detail-title-contanier-content-a-totalprice {
     /* background-color: forestgreen; */
     height: 55px;
     width: 230px;
@@ -285,12 +285,12 @@ body {
     margin: 0 0 0 108px;
 }
 
-.account-order-detail-title-contanier-content-a-totalprice span {
+.checkout-order-detail-title-contanier-content-a-totalprice span {
     display: flex;
     align-self: center;
 }
 
-.account-order-detail-title-contanier-content-discount {
+.checkout-order-detail-title-contanier-content-discount {
     height: 22.9479px;
     width: 1140px;
     border-bottom: 1px dashed lightgrey;
@@ -353,7 +353,7 @@ body {
     cursor: pointer;
 }
 
-.account-order-detail-title-contanier-content-information {
+.checkout-order-detail-title-contanier-content-information {
     height: 95px;
     width: 1200px;
     display: flex;
@@ -481,7 +481,7 @@ body {
     margin: 0px 8px 0 -5px;
 }
 
-.account-order-detail-title-contanier-content-totalprice {
+.checkout-order-detail-title-contanier-content-totalprice {
     height: 73px;
     width: 1140px;
     padding: 0 30px 0 30px;
