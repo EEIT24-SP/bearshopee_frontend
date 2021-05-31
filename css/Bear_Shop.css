@@ -8,8 +8,7 @@ body {
     padding: 30px 0px 0px 0px;
     margin: auto;
     height: 382px;
-    width: 1400px;
-    min-width: 1400px;
+    width: 100%;
     background: #9999FF;
     text-align: center;
     line-height: 50px;
@@ -20,7 +19,7 @@ body {
     font-size: smaller;
     white-space: nowrap;
     height: 25px;
-    min-width: 1400px;
+    width: 100%;
     /* list-style-type: none; */
     text-align: center;
     background-color: #a06464;
@@ -44,7 +43,7 @@ body {
 
 .Bear-header-bottom {
     height: 100px;
-    min-width: 1400px;
+    width: 100%;
     text-align: center;
     background-color: #ffbb55;
 }
@@ -187,8 +186,9 @@ td {
     height: 5px;
     background-color: sandybrown;
     border: 0px;
-    min-width: 1400px;
-    margin: auto;
+
+ width: 100%;
+     margin: auto;
 }
 
 .footer-table-img {
@@ -214,7 +214,7 @@ td {
 
 
 .Bear-header-bottom-container {
-    width: 1400px;
+    width: 100%;
     height: 100px;
     margin: auto;
     display: flex;
@@ -280,7 +280,7 @@ td {
 
 .main-page-container {
     display: flex;
-    min-width: 1400px;
+    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -288,7 +288,7 @@ td {
 
 .main-page-container-outside {
     display: flex;
-    width: 1400px;
+    width: 100%;
     justify-content: center;
     margin-top: 30px;
 }
@@ -302,7 +302,7 @@ td {
 
 .main-page-container-inside {
     display: flex;
-    width: 1400px;
+    width: 100%;
 }
 
 .main-page-container-outside-right {
@@ -352,7 +352,7 @@ td {
     height: 5px;
     background-color: sandybrown;
     border: 0px;
-    min-width: 1400px;
+    width: 100%;
     margin: auto;
 }
 
