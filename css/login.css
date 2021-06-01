@@ -1,6 +1,7 @@
 body {
     margin: 0px;
-    width: 1550px;
+    width: 100%;
+    background-color: #EBEBEB;
 }
 a{
     text-decoration:none;
@@ -8,11 +9,11 @@ a{
 #login_top {
     /* width: 100%; */
     height: 84px;
+    background-color:white;
 }
 #login_top_logo{
     height: 84px;
     float: left;
-    /* background-color: burlywood; */
 }
 #login_top_logo>img{
     width: 170px;
@@ -113,12 +114,21 @@ min-height: 485px;
 #account{
     width: 335px;
 }
-.login_mid_right_box_remind{
+.login_mid_right_box_accountremind{
     font-size: 12px;
     line-height: 14.4px;
     height: 16px;
     width: 338px;
     padding: 4px 0 10px 0 ;
+    color: red;
+}
+.login_mid_right_box_passwordremind{
+    font-size: 12px;
+    line-height: 14.4px;
+    height: 16px;
+    width: 338px;
+    padding: 4px 0 10px 0 ;
+    color: red;
 }
 #password{
     display: flex;
@@ -185,7 +195,6 @@ min-height: 485px;
     width: 350px;
     height: 40px;
     margin: 0 -5px 0 -5px;
-    border: red 1px solid;
     text-align: center;
 }
 #login_mid_right_otherlogin{
@@ -196,7 +205,6 @@ min-height: 485px;
     width: 110px;
     height: 40px;
     display:flex;
-    border: red 1px solid;
     align-items: center;
     justify-content: center;
 }
@@ -215,7 +223,6 @@ min-height: 485px;
 .login_logo_box>img{
     width: 22px;
     height: 22px;
-
 }
 #google_login{
     background-color: #4285F4;
@@ -225,7 +232,7 @@ min-height: 485px;
     background-color: white;
 }
 #google_login_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 55px;
     color: white;
 }
@@ -237,7 +244,7 @@ min-height: 485px;
     height: 27px;
 }
 #apple_login_text{
-    font-size: 14px;
+    font-size: 16px;
     width: 55px;
     color: white;
 }
@@ -255,7 +262,7 @@ min-height: 485px;
 
 /*-----------footer----------*/
 .footer {
-    width: 100%;
+    width: 1200px;
     height: 490px;
     /* background-color: rgb(204, 204, 204); */
     margin: auto;
@@ -263,7 +270,7 @@ min-height: 485px;
 
 .footer-table {
     margin: auto;
-    width: 100%;
+    width: 1200px;
     border-spacing: 15px;
     text-align: left;
 }
@@ -288,7 +295,7 @@ min-height: 485px;
     background-color: sandybrown;
     border: 0px;
     width: 100vw;
-    min-width: 100%;
+    min-width: 1400px;
     margin: auto;
 }
 
