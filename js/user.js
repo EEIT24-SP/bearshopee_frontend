@@ -153,3 +153,34 @@ function mousehover_img(myid){
     console.log(myid.id)
 
 }
+
+
+function add() {
+    document.getElementById('all_light').style.display = 'block';
+    document.getElementById('content').style.display = 'block';
+    document.getElementById('body').style.overflow="hidden";
+
+
+}
+function add_1() {
+    document.getElementById('all_light-1').style.display = 'block';
+    document.getElementById('content-1').style.display = 'block';
+    document.getElementById('body').style.overflow="hidden";
+
+    
+}
+
+function add_market() {
+    document.getElementById('all_light-market').style.display = 'block';
+    document.getElementById('content-market').style.display = 'block';
+    document.getElementById('body').style.overflow="hidden";
+
+    
+}
+function add_address() {
+    document.getElementById('all_light-address').style.display = 'block';
+    document.getElementById('content-address').style.display = 'block';
+    document.getElementById('body').style.overflow="hidden";
+
+    
+}
