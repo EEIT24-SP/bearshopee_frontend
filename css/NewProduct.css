@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.basic-information-container{
+    width: 80%;
+    height: 400px;
+    background-color: white;
+    margin: 70px auto;
+    background-color: #FFFFFF;
+    position: relative;	
+    box-shadow: -2px 0px 9px 1px #C9C9C9;
+}
+
+.basic-information-title{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 35px 0 15px 0 ;
+}
+
+.basic-information-container-middle{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.picture-number{
+    color: gray;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.basic-information-container-picture{
+    display: flex;
+}
+
+.imgPreview {
+    width: 80px;
+    height: 80px;
+    border: 1px grey dashed;
+    margin: 0 0 0 20px;   
+}
+
+.basic-information{
+    margin: 10px -10px 0 30px;
+    width: 10%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.imgPreview :hover {
+    cursor: pointer;
+    background-color: #ffefe47c;
+}
+
+.imgPreview :hover img{
+    background-color: white;
+}
+
+
+.prompt {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.plusicon img{
+    height: 8px;
+    width: 8px;
+    padding: 10px;
+    border: lightgray 1px solid;
+    border-radius: 60px;
+}
+
+.plusicon {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.filepath {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#img3 {
+    height: 90%;
+    width: 100%;
+    display: none;
+    margin: 5px auto;
+    position: absolute;
+    top: 0px;
+}
+
+.basic-information-name-container{
+    display: flex;
+    height: 60px;
+    margin: 30px  0 0 0;
+    width: 100%;
+}
+
+.basic-information-name{
+    width: 10%;
+    margin: auto 0 auto 30px;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.basic-information-name-container input{
+    width: 80%;
+    height: 30px;
+    margin: 12px 0 0 15px ;
+    border: lightgray 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;
+    
+}
+
+.input-container {
+    width: 100%;
+}
+
+.basic-information-name-container input:focus{
+    outline: none;
+}
+
+.basic-information-name-container input:hover{
+    border: grey solid 1px;
+    transition: 0.5s;
+}
+
+.basic-information-other-container{
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+.basic-information-description-container{
+    display: flex;
+    height: 60px;
+    width: 100%;
+}
+
+#product-description{
+    height: 50px;
+}
+
+.basic-information-other-container textarea{
+    width: 80%;
+    height: 200px;
+    margin: 0 0 0 15px ;
+    border: lightgray 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;   
+}
+
+.basic-information-other-container input{
+    width: 80%;
+    height: 30px;
+    margin: 12px 0 0 15px ;
+    border: lightgray 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;   
+}
+
+.basic-information-other-container input:focus{
+    outline: none;
+}
+.basic-information-other-container input:hover{
+    border: grey solid 1px;
+    transition: 0.5s;
+}
+
+.basic-information-other-container textarea{
+    width: 80%;
+    height: 200px;
+    margin: 0 0 0 15px ;
+    border: lightgray 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;   
+}
+
+.basic-information-other-container input{
+    width: 80%;
+    height: 30px;
+    margin: 12px 0 0 15px ;
+    border: lightgray 1px solid;
+    border-radius: 3px;
+    padding: 3px 10px;   
+}
+
+.basic-information-other-container input:focus{
+    outline: none;
+}
+.basic-information-other-container input:hover{
+    border: grey solid 1px;
+    transition: 0.5s;
+}
