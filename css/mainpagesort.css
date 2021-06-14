@@ -29,8 +29,8 @@
     /* display: flex; */
     z-index: 1;
     /* border: rgba(0, 0, 0, 0.08) 1px solid; */
-    border-right: rgba(0, 0, 0, 0.08) 1px solid;
-    border-left: rgba(0, 0, 0, 0.08) 1px solid;
+    border-right: lightgrey 1px solid;
+    border-left: lightgrey 1px solid;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 4px 0px;
     cursor: pointer;

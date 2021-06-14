@@ -137,6 +137,7 @@ function setCurrentActiveIndicator(index) {
         }
     }
 }
+
 $('.shopee-shop-filter-toggle-btn').on('click', function () {
     $(this).parent().find('.shopee-shop-filter-toggle').slideToggle(300);
     $(this).remove();
@@ -164,4 +165,21 @@ $('.shop-search-right-product').mouseenter(function () {
 $('.shop-search-right-product').mouseleave(function () {
     $(this).removeClass('moveup')
 })
-
+$('.main-brand-image').mouseenter(function () {
+    $(this).addClass('moveup')
+})
+$('.main-brand-image').mouseleave(function () {
+    $(this).removeClass('moveup')
+})
+$('.main-brand-logo-header-container-first-line').mouseenter(function () {
+    $(this).addClass('trans')
+})
+$('.main-brand-logo-header-container-first-line').mouseleave(function () {
+    $(this).removeClass('trans')
+})
+$('.main-brand-logo-header-container-second-line').mouseenter(function () {
+    $(this).addClass('trans')
+})
+$('.main-brand-logo-header-container-second-line').mouseleave(function () {
+    $(this).removeClass('trans')
+})
