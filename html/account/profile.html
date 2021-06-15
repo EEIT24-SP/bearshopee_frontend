@@ -1,0 +1,394 @@
+<html>
+
+<head>
+  <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../../css/account.css" />
+  <link rel="stylesheet" href="../../css/Bear_Shop.css" />
+</head>
+<script src="../../js/user.js" defer></script>
+
+<body ondragstart="return false" oncopy="return false;">
+  <nav class="Bear-header-top">
+    <ul>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp">
+          <strong>賣家中心</strong>
+        </a>
+      </li>
+      <li style="user-select: none">|</li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp"><strong>下載</strong>
+        </a>
+      </li>
+      <li style="user-select: none">|</li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp">
+          <strong>追蹤我們</strong></a>
+      </li>
+      <a href="https://www.w3schools.com/html/default.asp"><img class="Bear-header-top-icon" src="../../pic/FB.svg"
+          alt="" /></a>
+      <a href="https://www.w3schools.com/html/default.asp"><img class="Bear-header-top-icon" src="../../pic/Line.svg"
+          alt="" /></a>
+      <a href="https://www.w3schools.com/html/default.asp"><img class="Bear-header-top-icon" src="../../pic/IG.svg"
+          alt="" /></a>
+      <li style="user-select: none; visibility: hidden">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp"><img src="../../pic/Bell.svg" style="width: 18px" alt="" />
+          <strong>通知總覽</strong></a>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp"><img src="../../pic/Help_icon.svg"
+            alt="" /><strong>幫助中心</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp"><img src="../../pic/Account.svg" style="width: 20px"
+            alt="" /><strong>會員帳戶</strong>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="Bear-header-bottom">
+    <div class="Bear-header-bottom-container">
+      <div class="Bear-header-bottom-container-left">
+        <a href="../Bear_Shop.html">
+          <div class="Bear-header-bottom-container-left-container">
+            <div style="width: 40%">
+              <img class="icon_Bear" src="../../pic/Bear.svg" alt="" />
+            </div>
+            <div style="font-size: 30px">熊熊商城</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="Bear-header-bottom-container-middle">
+        <div class="Bear-header-bottom-search">
+          <input type="text" class="Bear-header-input" placeholder="輸入搜尋文字" value="" />
+          <button onclick="btn_Bgc()" class="Bear-header-btn">
+            <img src="../../pic/Search.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="Bear-header-bottom-container-right">
+        <a href="../../cart.html">
+          <div class="Bear-header-bottom-container-right-container">
+            <img class="icon-Shop-Car" src="../../pic/Shop_Car.svg" alt="" />
+            <div class="cart-ccount-manger" id="ccount"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ------------------------------------------------主頁面------------------------------------------------------------- -->
+  <div class="main">
+    <div style="display: flex">
+      <div style="width: 25%">
+        <div class="main-user-head">
+          <div class="main-user-head-border">
+            <img class="main-user-head-border-img" src="../../pic/Bear.svg" alt="" />
+          </div>
+
+          <div class="main-user-head-text">
+            <div class="main-user-head-text-a">
+              <div class="main-user-head-text-b">
+                <div>使用者名稱</div>
+                <div>
+                  <a href="./profile.html">編輯個人檔案</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <table class="main-table">
+          <tr>
+            <td class="acc">
+              <div onclick="btn_list_profile()">
+                <img class="main-table-acc-img" src="../../pic/Account.svg" alt="" />
+                <span class="main-left-list-name">我的帳戶</span>
+              </div>
+              <ul id="acc-profile" class="acc-list">
+                <li>
+                  <a href="./profile.html">個人檔案</a>
+                </li>
+                <li>
+                  <a href="./credit_card.html">銀行帳號/信用卡</a>
+                </li>
+                <li><a href="./address.html">地址</a></li>
+                <li>
+                  <a href="./password.html">更改密碼</a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img class="main-table-acc-img" src="../../pic/List.svg" alt="" />
+              <span class="main-left-list-name"><a href="../shop_list/shop_list.html">購買清單</a> </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="acc">
+              <div onclick="btn_list_notice()">
+                <img class="main-table-acc-img" src="../../pic/Notice.svg" alt="" />
+                <span class="main-left-list-name">通知總覽</span>
+              </div>
+              <ul id="acc-notice" class="acc-list">
+                <li>
+                  <a href="../notice/notice.html">訂單更新通知</a>
+              </li>
+              <li>
+                  <a href="../notice/promotin_notice.html">促銷活動相關通知</a>
+              </li>
+              <li>
+                  <a href="../notice/dynamic_notice.html">動態通知</a>
+              </li>
+              <li>
+                  <a href="../notice/bear_notice.html">熊熊通知</a>
+              </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img class="main-table-acc-img" src="../../pic/Coupon.svg" alt="" />
+              <span class="main-left-list-name">我的優惠券</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="main-right-profile">
+        <div style="width: 90%;height: 90%;margin: auto;">
+          <div id="main-right-list-1" class="main-right-profile-title">
+            <div class="main-right-profile-title-desc">
+              <b>我的檔案</b><br>
+              管理你的檔案以保護你的帳戶
+            </div>
+          </div>
+          
+          <div class="main-right-profile-container">
+            <div class="main-right-profile-left-container">
+              <div class="main-right-profile-list-account">
+                <div class="main-right-profile-list-account-a">使用者帳號</div>
+                <div>pppp</div>
+              </div>
+
+              <div class="main-right-profile-list-neme">
+                <div class="main-right-profile-list-neme-a">姓名</div>
+                <div class="main-right-profile-list-neme-b">
+                  <div class="main-right-profile-list-neme-c">
+                    <input class="main-right-profile-list-neme-input" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-right-profile-list-email">
+                <div class="main-right-profile-list-email-a">Email</div>
+                <div>ppppppp@gmial.com</div>
+                <div style="padding:0px 10px ;"><a href="">變更</a></div>
+              </div>
+
+              <div class="main-right-profile-list-phone">
+                <div class="main-right-profile-list-phone-a">手機號碼</div>
+                <div>0919123456</div>
+                <div style="padding:0px 10px ;"><a href="">變更</a></div>
+              </div>
+
+              <div class="main-right-profile-list-store">
+                <div class="main-right-profile-list-store-a">賣場名稱</div>
+                <div class="main-right-profile-list-store-b">
+                  <div class="main-right-profile-list-store-c">
+                    <input class="main-right-profile-list-store-input" type="text">
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-right-profile-list-sex">
+                <div class="main-right-profile-list-sex-a">性別</div>
+                <div> <input id="my-radio1" type="radio" name="my-radio"><label for="my-radio1">男</label> </div>
+                <div> <input id="my-radio2" type="radio" name="my-radio"><label for="my-radio2">女</label> </div>
+                <div> <input id="my-radio3" type="radio" name="my-radio"><label for="my-radio3">其他</label>
+                </div>
+              </div>
+
+              <div class="main-right-profile-list-birth">
+                <div class="main-right-profile-list-birth-a">生日</div>
+
+
+
+                <div class="birth-year">
+                  <div class="birth-year-a" id="Select_Year">
+
+                    <div class="birth-year-b" onclick="btn_input_year_list()">
+                      <input class="main-left-list-name birth-year-input" id="input-list" type="button" value="請選擇">
+                      <div class="birth-year-c">
+                        <div class="birth-year-d">年</div>
+                      </div>
+                    </div>
+                    <select size="5" name="" class="input-sel-list" id="input-sel" onclick="input_year_sel()">
+                    </select>
+                  </div>
+
+                </div>
+
+                <div class="birth-month">
+                  <div class="birth-month-a" id="Select_Month">
+
+
+                    <div class="birth-month-b" onclick="btn_input_month_list()">
+                      <input class="main-left-list-name birth-month-input" id="input-month-list" type="button"value="請選擇">
+                      <div class="birth-month-c">
+                        <div class="birth-month-d">月</div>
+                      </div>
+                    </div>
+                    <select size="5" name="" class="input-sel-list" id="input-month-sel"
+                      onclick="input_month_sel()"></select>
+                  </div>
+
+                </div>
+
+                <div class="birth-day">
+                  <div class="birth-day-a" id="Select_Day">
+
+
+                    <div class="birth-day-b" onclick="btn_input_day_list()">
+                      <input class="main-left-list-name birth-day-input" id="input-day-list" type="button" value="請選擇">
+                      <div class="birth-day-c">
+                        <div class="birth-day-d">日</div>
+                      </div>
+                    </div>
+                    <select size="5" name="" class="input-sel-list" id="input-day-sel"
+                      onclick="input_day_sel()"></select>
+                  </div>
+
+                </div>
+
+              </div>
+              <div style="display: flex;align-items: center; margin-bottom: 30px;width: 90%;">
+                <div style="width: 15%; text-align: right;padding: 0px 20px;">
+                  <!--標題-->
+                </div>
+                <div style="height: 40px; display: flex;">
+                  <div style="align-items: center; display: flex;">
+                    <button class="main-right-profile-save-btn">
+                      <div style="color: white;">儲存</div>
+                    </button></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="main-right-profile-right-container">
+              <img class="main-right-profile-right-container-img" src="../../pic/Bear.svg" alt="">
+              <div class="main-right-profile-right-container-a"><button class="main-right-profile-right-container-img-2"
+                  style="height: 30px;width: 100px;">選擇圖片</button></div>
+              <div>檔案大小:最大1MB</div>
+              <div>檔案限制: .JPEG, .PNG</div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <br><br>
+  <hr class="main-page-container-hr" />
+  <br><br>
+
+  <div class="footer">
+    <div style="display: flex;">
+      <div style=" width: 240px;line-height: 35px;font-size: 13px;">
+        <div><b>客服中心</b></div>
+        <div>幫助中心</div>
+        <div>熊熊商城</div>
+        <div>付款方式</div>
+        <div>蝦幣</div>
+        <div>運費補助</div>
+        <div>退貨退款</div>
+        <div>延長訂單撥款</div>
+        <div>聯絡客服</div>
+        <div>防詐騙宣導</div>
+
+      </div>
+      <div style=" width: 240px;line-height: 35px;font-size: 13px;">
+        <div><b>關於熊熊</b></div>
+        <div>關於熊熊</div>
+        <div>加入我們</div>
+        <div>熊熊條款</div>
+        <div>隱私權政策</div>
+        <div>熊熊商城</div>
+        <div>賣家中心</div>
+        <div>限時特賣</div>
+        <div>聯絡媒體</div>
+      </div>
+      <div style=" width: 240px;line-height: 35px;font-size: 13px;">
+        <div><b>付款</b></div>
+        <div><img src="../../pic/visa-b.png" style="width: 50px;" alt=""></div>
+        <div>物流合作</div>
+        <div><img src="" alt="">塞圖片</div>
+      </div>
+      <div style=" width: 240px;line-height: 35px;font-size: 13px;">
+        <div><b>關注我們</b></div>
+        <div> <img src="../../pic/fb-b.png" class="footer-table-img" alt=""> Facebook</div>
+        <div><img src="../../pic/ig-b.png" class="footer-table-img" alt=""> Instagram</div>
+        <div><img src="../../pic/line-b.png" class="footer-table-img" alt=""> Line</div>
+        <div><img src="../../pic/in-b.png" class="footer-table-img" alt=""> LinkedIn</div>
+        <div><img src="../../pic/bear-b.png" class="footer-table-img" alt=""> 熊熊輯部落格</div>
+      </div>
+      <div style=" width: 240px;line-height: 35px;font-size: 13px;">
+        <div><b>下載熊熊</b></div>
+        <div>
+          <img src="../../pic/QRcode.png" class="footer-table-QRcode" alt="">
+        </div>
+        <div>
+          <img src="../../pic/apple.svg" class="footer-table-img" alt=""> Apple Store
+        </div>
+        <div>
+          <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
+        </div>
+        <div>
+          <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
+        </div>
+
+      </div>
+
+    </div>
+    <hr>
+    <div class="footer-footer">
+      <div class="footer-footer-copyright">© 2021 Bear. 版權所有。</div>
+      <div>
+        國家和地區:
+        新加坡
+        印尼
+        台灣
+        泰國
+        馬來西亞
+        越南
+        菲律賓
+        巴西
+      </div>
+
+    </div>
+  </div>
+  <script src="../../js/cookie.js" type="text/javascript" charset="utf-8" defer></script>
+
+  <script type="text/javascript" src="../../js/index.js" defer></script>
+  <script type="text/javascript" src="../../js/server.js"></script>
+  <script src="../../js/user.js" defer></script>
+  <script src="../../js/change.js"></script>
+</body>
+
+</html>
