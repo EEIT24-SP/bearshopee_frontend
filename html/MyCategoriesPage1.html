@@ -9,44 +9,44 @@
 </head>
 
 <body>
-        <div class="header-navbar-container">
-            <div class="header-navbar-left">
-                <div><a href=""><img src="/pic/Bear.svg" alt=""></a></div>
-                <div>
-                    <div><a href="">首頁</a></div>
-                    <div><img src="/pic/right-arrow-gray.png" alt=""></div>
-                    <div><a href="">我的商品</a></div>
-                    <div><img src="/pic/right-arrow-gray.png" alt=""></div>
-                    <div><a href="">商品分類</a></div>
-                </div>
-            </div>
-            <div class="header-navbar-right">
-                <div class="head-account"><img src="/pic/bear.png" alt=""><span>account1234</span></div>
-                <div class="logout"><span>登出</span></div>
+    <div class="header-navbar-container">
+        <div class="header-navbar-left">
+            <div><a href=""><img src="/pic/Bear.svg" alt=""></a></div>
+            <div>
+                <div><a href="">首頁</a></div>
+                <div><img src="/pic/right-arrow-gray.png" alt=""></div>
+                <div><a href="">我的商品</a></div>
+                <div><img src="/pic/right-arrow-gray.png" alt=""></div>
+                <div><a href="">商品分類</a></div>
             </div>
         </div>
+        <div class="header-navbar-right">
+            <div class="head-account"><img src="/pic/bear.png" alt=""><span>account1234</span></div>
+            <div class="logout"><span>登出</span></div>
+        </div>
+    </div>
     <div class="Category-container">
-        <div class="Category-header">
-            <h2>新增商品</h2>
-            <p>請在下方填入您的商品所屬分類</p>
-        </div>
-        <div class="Category-Product-Search">
-            <div class="ProductName">商品名稱:
-                <div class="ProductName-input">
-                    <input type="text" placeholder="請輸入相關資訊">
-                    <div class="input-distinct">0/50</div>
+        <div class="Category-container-all">
+            <div class="Category-header">
+                <h2>新增商品</h2>
+                <p>請在下方填入您的商品所屬分類</p>
+            </div>
+            <div class="Category-Product-Search">
+                <div class="ProductName">商品名稱:
+                    <div class="ProductName-input">
+                        <div class="input-hint">
+                            <span class="msg">商品名稱不能為空白</span>
+                            <input type="text" class="input-text"  maxlength="50" placeholder="請輸入相關資訊">
+                        </div>
+                        <div class="input-distinct"><span class="input-length">0</span>/50</div>
+                    </div>
                 </div>
             </div>
-        </div>
         <div class="Category-selector">
-            <div class="Category-selector-inner-input">
-                <img src="/pic/magnifying-glass.png" alt="">
-                <input type="text">
-            </div>
             <div class="Category-selector-wrap">
                 <div class="Category-selector-list">
                     <ul class="Category-scroll-item">
-                        <li class="Category-item" >
+                        <li class="Category-item">
                             <p>女生衣著</p>
                             <img src="/pic/right-arrow-gray.png" alt="">
                             <div class="Category-second-container display-none">
@@ -472,13 +472,13 @@
                                                 <li class="Category-item-third">
                                                     <p>Sony系列</p>
                                                 </li>
-                                                <li class="Category-item--third">
+                                                <li class="Category-item-third">
                                                     <p>OPPO系列</p>
                                                 </li>
-                                                <li class="Category-item--third">
+                                                <li class="Category-item-third">
                                                     <p>VIVO系列</p>
                                                 </li>
-                                                <li class="Category-item--third">
+                                                <li class="Category-item-third">
                                                     <p>ASUS系列</p>
                                                 </li>
                                             </ul>
@@ -558,12 +558,21 @@
                 </div>
             </div>
             <div class="category-selected"> 目前已選擇:
-                <span id="category-first"></span> 
-                <span id="category-second"></span> 
-                <span id="category-third"></span> 
+                <span id="category-first"></span>
+                <span class="span1" id="span1">></span>
+                <span id="category-second"></span>
+                <span class="span1" id="span2">></span>
+                <span id="category-third"></span>
             </div>
         </div>
+        <div class="btn">
+            <a href="/html/NewProduct.html">
+                <p>下一步</p>
+            </a>
+        </div>
     </div>
+    </div>
+
 </body>
 
 </html>
