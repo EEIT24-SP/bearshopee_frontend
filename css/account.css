@@ -64,7 +64,11 @@ a:active {
   width: 1400px;
   background-color: rgba(245, 245, 245);
   margin: auto;
+  display: flex;
   margin-top: 30px;
+}
+.main-user{
+  width: 25%
 }
 
 .main-table {
@@ -165,7 +169,7 @@ option:hover {
   cursor: pointer;
   color: burlywood;
 }
-
+.main-right-password-save-btn,
 .main-right-profile-save-btn {
   background-color: orange;
   width: 110px;
@@ -173,6 +177,7 @@ option:hover {
   border: 0px;
   border-radius: 5px;
   outline: 0px;
+  color: rgb(255, 255, 255);
 }
 
 .main-right-profile-save-btn:active {
@@ -463,17 +468,18 @@ select {
   text-align: left;
 }
 
-
+.main-right-address,
 .main-right-credit_card {
   width: 950px;
   height: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(46, 46, 46, 0.3);
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
 }
 
+
+.main-right-address-title,
 .main-right-credit_card-title {
   align-items: center;
   margin: auto;
@@ -481,7 +487,7 @@ select {
   background-color: rgba(255, 255, 255);
   display: flex;
 }
-
+.main-right-address-title-desc,
 .main-right-credit_card-title-desc {
   width:95%;
   background-color: rgb(255, 255, 255);
@@ -565,4 +571,189 @@ select {
 
 .SC::-webkit-scrollbar {
   display: none;
+}
+
+.main-right-profile-a{
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+
+.main-right-profile-btn-a{
+  height: 40px; 
+  display: flex;
+  width: 90%;
+}
+.main-right-profile-btn-b{
+  width: 15%;
+  text-align: right;
+  padding: 0px 20px;
+}
+
+.main-right-profile-btn-c{
+  align-items:center;
+  display: flex;
+}
+.main-right-address-a,
+.main-right-credit_card-a,
+.main-right-password-a{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+.main-right-address-b{
+
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.main-right-credit_card-c,
+.main-right-address-c{
+  height: 40px;
+display: flex; 
+justify-content:center;
+align-items: center;
+}
+.main-right-credit_card-container,
+.main-right-address-container{
+  display: flex;
+  justify-content: left;
+  height: 100px;
+  border-top: 1px solid rgb(225, 225, 225); 
+}
+.main-right-credit_card-b,
+.main-right-password-b{
+  display: flex;
+  justify-content: center;
+}
+
+.main-right-password-forgot{
+  margin-left: 10px;  
+}
+
+.main-right-password-btn-container{
+  display: flex; 
+  justify-content: center;
+}
+
+.main-right-address-container-a{
+  width: 90%;margin:10px 0px;
+}
+.main-right-address-container-b{
+  margin: 5px 20px;
+}
+.main-right-address-container-c{
+  display: flex;
+  justify-content: center; 
+  width: 10%;
+}
+.main-right-credit_card-container-a{
+  width: 35%;
+  margin:10px 0px;
+  display: flex;
+  align-items: center;
+}
+.main-right-credit_card-container-img{
+width: 80px;
+float: left;
+padding: 0px 10px 0px 0px
+}
+.main-right-credit_card-container-num{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 35%;
+
+}
+.main-right-credit_card-container-del{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width:30%;
+}
+.main-right-credit_card-new-acc{
+  display: flex;
+  justify-content: center;
+}
+.main-right-credit_card-new-acc-a{
+  height: 40px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.pop-up-window-a{
+  width: 100%;
+  height: 100vh;display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.pop-up-window-content-a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-window-content-b{
+  display: flex;
+  height: 90%;
+  width: 90%;
+  flex-direction: column;
+}
+.pop-up-window-content-c{
+  width:100%;
+  height:20%;
+}
+.pop-up-window-content-d{
+  display: flex
+  ;align-items: center;
+  height: 100%;
+  font-size: 25px;
+}
+.pop-up-window-content-e{
+  display: flex;
+  border: 1px solid orange;
+  background-color:rgb(255, 208, 0,0.5);
+  padding: 10px;
+}
+.pop-up-window-content-img{
+  width: 20px;float: left;margin: 0px 5px 0px 0px;
+}
+.ui-datepicker-month,
+.ui-datepicker-year{
+  position: relative;
+}
+.new_credit_card{
+  width: 100%;
+  height: 75%;
+}
+.new_credit_card-a{
+  height: 85%;
+  align-items: center;
+  overflow-y:scroll;
+}
+
+.new_credit_card-a::-webkit-scrollbar {
+  display: none;
+}
+.new_credit_card-b{
+  display: flex;
+  justify-content: center;
+  align-items: center
+  ;padding: 5px 0px;
+}
+.new_credit_card-b-img{
+  width: 20%;
+  height: 38px;
+}
+.new_credit_card-btn{
+  text-align: right;
+}
+.new_credit_card-btn-a{
+  width:27%;
+  height: 38px;
 }

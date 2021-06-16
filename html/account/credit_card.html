@@ -6,16 +6,20 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../../css/account.css" />
     <link rel="stylesheet" href="../../css/Bear_Shop.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker({
+              changeMonth:true,
+      changeYear: true,
+      yearRange : "1911:2021",
+          });
 
-    <style type="text/css">
-
-    </style>
-
-
-
-
-
-
+        } );
+        </script>
 </head>
 
 <body id="body" ondragstart="return false" oncopy="return false;">
@@ -180,13 +184,13 @@
             </div>
 
             <div class="main-right-credit_card">
-                <div style="width: 90%;height: 90%;margin: auto;">
+                <div  class="main-right-credit_card-a">
                     <div class="main-right-credit_card-title">
                         <div class="main-right-credit_card-title-desc">
                             <span><b>我的信用卡</b></span> <br>
                         </div>
-                        <div style="display: flex;justify-content: center;">
-                            <div style="height: 40px; display: flex; justify-content:center;align-items: center;">
+                        <div  class="main-right-credit_card-b">
+                            <div class="main-right-credit_card-c">
                                 <div>
                                     <button class="main-right-profile-save-btn" onclick="add()">
                                         <div style="color: white;"><span>+ 新增信用卡</span>
@@ -198,20 +202,16 @@
                         </div>
                     </div>
 
-                    <div style="
-                    display: flex;
-                    justify-content: left;
-                    border-top: 1px solid rgb(225, 225, 225);
-                ">
-                        <div style="width: 35%;margin:10px 0px;display: flex;align-items: center;">
+                    <div class="main-right-credit_card-container">
+                        <div class="main-right-credit_card-container-a">
                             <div>
-                                <img style="width: 80px; float: left; padding: 0px 10px 0px 0px" src="../../pic/visa-b.png"
+                                <img class="main-right-credit_card-container-img" src="../../pic/visa-b.png"
                                     alt="" />
                             </div>
                             <div>visa</div>
                         </div>
 
-                        <div style="display: flex;justify-content: center;align-items: center; width: 35%;">
+                        <div class="main-right-credit_card-container-num">
                             <div>
                                 **** **** **** 1234
                             </div>
@@ -219,7 +219,7 @@
                         </div>
 
 
-                        <div style="display: flex;justify-content: flex-end;align-items: center; width:30%;">
+                        <div class="main-right-credit_card-container-del">
                             <div>
                                 <a href="">刪除</a>
                             </div>
@@ -228,20 +228,16 @@
                         </div>
                     </div>
 
-                    <div style="
-                    display: flex;
-                    justify-content: left;
-                    border-top: 1px solid rgb(225, 225, 225);
-                  ">
-                        <div style="width: 35%;margin:10px 0px;display: flex;align-items: center;">
+                    <div class="main-right-credit_card-container">
+                        <div class="main-right-credit_card-container-a">
                             <div>
-                                <img style="width: 80px; float: left; padding: 0px 10px 0px 0px" src="../../pic/visa-b.png"
+                                <img class="main-right-credit_card-container-img" src="../../pic/visa-b.png"
                                     alt="" />
                             </div>
                             <div>visa</div>
                         </div>
 
-                        <div style="display: flex;justify-content: center;align-items: center; width: 35%;">
+                        <div class="main-right-credit_card-container-num">
                             <div>
                                 **** **** **** 1234
                             </div>
@@ -249,7 +245,7 @@
                         </div>
 
 
-                        <div style="display: flex;justify-content: flex-end;align-items: center; width:30%;">
+                        <div class="main-right-credit_card-container-del">
                             <div>
                                 <a href="">刪除</a>
                             </div>
@@ -264,11 +260,11 @@
                         <div class="main-right-credit_card-title-desc">
                             <span><b>銀行帳號</b></span> <br>
                         </div>
-                        <div style="display: flex;justify-content: center;">
-                            <div style="height: 40px; display: flex; justify-content:center;align-items: center;">
+                        <div class="main-right-credit_card-new-acc">
+                            <div class="main-right-credit_card-new-acc-a">
                                 <div>
-                                    <button class="main-right-profile-save-btn" onclick="add_1()">
-                                        <span style="color: white;">+ 新增銀行帳號 </span>
+                                    <button  class="main-right-profile-save-btn" onclick="add_1()">
+                                        <span>+ 新增銀行帳號 </span>
                                     </button>
                                 </div>
 
@@ -277,16 +273,13 @@
                     </div>
 
 
-                    <div style="
-                         display: flex;
-                      justify-content: left;
-                        border-top: 1px solid rgb(225, 225, 225);">
-                        <div style="width: 35%;margin:10px 0px;display: flex;align-items: center;">
+                    <div class="main-right-credit_card-container">
+                        <div class="main-right-credit_card-container-a">
                             <div>
-                                <img style="width: 80px; float: left; padding: 0px 10px 0px 0px" src="../../pic/visa-b.png"
+                                <img class="main-right-credit_card-container-img" src="../../pic/visa-b.png"
                                     alt="" />
                             </div>
-                            <div style="text-align: left;font-size: 10px;">
+                            <div>
                                 <div>中國信託商業銀行
                                 </div>
                                 <div>全名: <span>林*雄</span> </div>
@@ -295,7 +288,7 @@
                             </div>
                         </div>
 
-                        <div style="display: flex;justify-content: center;align-items: center; width: 35%;">
+                        <div class="main-right-credit_card-container-num">
                             <div>
                                 * 1234
                             </div>
@@ -303,7 +296,7 @@
                         </div>
 
 
-                        <div style="display: flex;justify-content: flex-end;align-items: center; width:30%;">
+                        <div class="main-right-credit_card-container-del">
                             <div>
                                 <a href="">刪除</a>
                             </div>
@@ -331,64 +324,61 @@
 
         <div id="all_light" class="pop-up-window">
 
-            <div style="width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;">
+            <div class="pop-up-window-a">
                 <div id="content" class="pop-up-window-content">
-                    <div style="width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                        <div style="display: flex;height: 90%;width: 90%;flex-direction: column;">
-
-                            <div style="width:100%;height:20%;">
-                                <div style="display: flex;align-items: center;height: 100%;font-size: 25px;">新增信用卡</div>
+                    <div class="pop-up-window-content-a">
+                        <div class="pop-up-window-content-b">
+                            <div class="pop-up-window-content-c">
+                                <div  class="pop-up-window-content-d">新增信用卡</div>
                             </div>
                             <br>
 
-                            <div
-                                style="display: flex;border: 1px solid orange;background-color:rgb(255, 208, 0,0.5);padding: 10px;">
+                            <div class="pop-up-window-content-e">
                                 <div>
-                                    <img src="./img/Notice.svg" style="width: 20px;float: left;margin: 0px 5px 0px 0px;"
-                                        alt="">
+                                    <img src="../../pic/Notice.svg" class="pop-up-window-content-img" alt="">
                                 </div>
                                 當你進行信用卡驗證時，我們會先向發卡銀行授權$1元，並在5天內退還給你
                             </div>
                             <br>
 
 
-                            <form class="new_credit_card" style=" width: 100%;height: 75%;">
-                                <div class="SC" style="height: 85%;align-items: center;overflow-y:scroll;">
+                            <form class="new_credit_card">
+                                <div class="new_credit_card-a">
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input class="new_credit_card_input" type="text" placeholder="持卡者名字" />
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="信用卡號碼" />
                                         &emsp;
                                         <img src="../../pic/visa-b.png"
-                                            style="width: 20%;height: 38px; background-color: white;" alt="">
+                                            class="new_credit_card-b-img" alt="">
                                         &emsp;
                                         <img src="../../pic/visa-b.png"
-                                            style="width: 20%;height: 38px; background-color: white;" alt="">
+                                              class="new_credit_card-b-img" alt="">
                                         &emsp;
                                         <img src="../../pic/visa-b.png"
-                                            style="width: 20%;height: 38px; background-color: white;" alt="">
+                                              class="new_credit_card-b-img" alt="">
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <div style="width: 100%;">到期</div>
                                         <div style="text-align: left;width: 92%;">CVV</div>
                                     </div>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="number" class="new_credit_card_input" placeholder="MM/YY" />
                                         &emsp;
                                         <input type="number" class="new_credit_card_input" placeholder="000" />
                                     </div><br>
 
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="信用卡帳單地址" />
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="郵遞區號" />
                                     </div><br>
                                     <div>
@@ -399,9 +389,9 @@
 
                                 </div>
                                 <br>
-                                <div style="text-align: right;">
-                                    <button type="submit" style="width:27%;height: 38px;">取消</button>
-                                    <button type="submit" style="width:27%;height: 38px;">完成</button>
+                                <div class="new_credit_card-btn">
+                                    <button class="new_credit_card-btn-a" type="submit">取消</button>
+                                    <button class="new_credit_card-btn-a" type="submit">完成</button>
                                 </div>
 
                             </form>
@@ -416,88 +406,65 @@
 
         <div id="all_light-1" class="pop-up-window">
 
-            <div style="width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;">
+            <div  class="pop-up-window-a">
                 <div id="content-1" class="pop-up-window-content">
-                    <div style="width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
-                        <div style="display: flex;height: 90%;width: 90%;flex-direction: column;">
-
-                            <div style="width:100%;height:20%;">
-                                <div style="display: flex;align-items: center;height: 100%;font-size: 25px;">新增信用卡</div>
+                    <div class="pop-up-window-content-a">
+                        <div class="pop-up-window-content-b">
+                            <div class="pop-up-window-content-c">
+                                <div  class="pop-up-window-content-d">新增信用卡</div>
                             </div>
                             <br>
 
-
-
-
-                            <form class="new_credit_card" style=" width: 100%;height: 75%;">
-                                <div class="SC" style="height: 85%;align-items: center;overflow-y:scroll;">
-                                    <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                            <form class="new_credit_card">
+                                <div class="new_credit_card-a">
+                                    <div 
+                                        class="new_credit_card-b">
                                         <input class="new_credit_card_input" type="text" placeholder="姓名" />
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="身分證字號" />
 
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <div style="width: 100%;">生日／公司核准設立日期</div>
 
                                     </div>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="number" class="new_credit_card_input" placeholder="MM/YY" />
                                     </div><br>
 
 
 
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
-                                        <div style="width: 75%;">戶籍地址／公司地址</div>
-                                        <div><a href="">從我的地址選取</a> </div>
+                                        class="new_credit_card-b">
+                                        <div style="width: 100%;">戶籍地址／公司地址</div>
+                                        <div style="width: 35%;"><a href="">從我的地址選取</a> </div>
 
                                     </div>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="number" class="new_credit_card_input" placeholder="MM/YY" />
                                     </div><br>
 
-
-
-
-
-                                    <div class="birth-month">
-                                        <div class="birth-month-a" id="Select_Month"
-                                            style="display: flex;flex-direction: column;">
-
-
-                                            <div class="birth-month-b" onclick="btn_input_month_list()">
-                                                <input class="main-left-list-name birth-month-input"
-                                                    id="input-month-list" type="button" value="請選擇">
-                                                <div class="birth-month-c">
-                                                    <div class="birth-month-d">月</div>
-                                                </div>
-                                            </div>
-                                            <select size="5" name="" class="input-sel-list"
-                                                style="position: relative;margin-top: 0px;" id="input-month-sel"
-                                                onclick="input_month_sel()"></select>
-                                        </div>
-
-                                    </div>
-
+                                <div
+                                class="new_credit_card-b">
+                                <input type="text" id="datepicker" class="new_credit_card_input"placeholder="月/日/年" />                     
+                                   </div><br>
 
                                     <br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="區" />
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="地址" />
                                     </div><br>
                                     <div
-                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        class="new_credit_card-b">
                                         <input type="text" class="new_credit_card_input" placeholder="郵遞區號" />
                                     </div><br>
                                     <div>
@@ -534,7 +501,7 @@
     <br><br>
 
     <div class="footer">
-        <div style="display: flex;">
+        <div class="footer-b">
             <div style=" width: 240px;line-height: 35px;font-size: 13px;">
                 <div><b>客服中心</b></div>
                 <div>幫助中心</div>

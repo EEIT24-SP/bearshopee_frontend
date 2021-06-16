@@ -8,104 +8,6 @@
     <script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/item.css">
-    <style>
-        .arrow-left {
-            width: 20px;
-            height: 20px;
-            /* background-color: transparent; */
-            /* 模块背景为透明 */
-            border-color: #ffffff;
-            border-style: solid;
-            border-width: 5px 5px 0px 0px;
-            margin: auto;
-            transform: rotate(225deg);
-            /*箭头方向可以自由切换角度*/
-        }
-
-        .arrow-right {
-            width: 20px;
-            height: 20px;
-            background-color: transparent;
-            /* 模块背景为透明 */
-            border-color: #ffffff;
-            border-style: solid;
-            border-width: 4px 4px 0 0;
-            margin: auto;
-            transform: rotate(45deg);
-            /*箭头方向可以自由切换角度*/
-        }
-
-        .arrow-down {
-            width: 10px;
-            height: 10px;
-            background-color: transparent;
-            /* 模块背景为透明 */
-            border-color: #ffffff;
-            border-style: solid;
-            border-width: 3px 3px 0 0;
-            transform: rotate(135deg);
-            /*箭头方向可以自由切换角度*/
-        }
-
-        .imgs>img:hover {
-            border: 2px solid yellow;
-        }
-
-        #success-msg {
-            border-radius: 10px;
-            height: 200px;
-
-            width: 400px;
-
-            background: rgb(159, 247, 76);
-
-            display: block;
-            opacity: 0;
-
-            transition: all 1s;
-
-            -wekit-transition: all 1s;
-
-            -moz-transition: all 1s;
-
-        }
-
-
-
-        .item-cart-btn-join {
-            width: 150px;
-            height: 40px;
-            background-color: #ffbb55;
-            outline: none;
-        }
-
-        .item-cart-btn-join:active {
-            background-color: rgb(248, 121, 3);
-            border: 2px solid rgb(255, 192, 99);
-            border-top: 2px solid rgb(71, 65, 141);
-            border-left: 2px solid rgb(71, 65, 141);
-        }
-
-        .item-cart-btn-buy {
-            width: 150px;
-            height: 40px;
-            background-color: orange;
-            margin-right: 10px;
-            margin-left: 10px;
-            outline: none;
-
-        }
-
-        .item-cart-btn-buy:active {
-            background-color: rgb(248, 121, 3);
-            border: 2px solid rgb(255, 192, 99);
-            border-top: 2px solid rgb(71, 65, 141);
-            border-left: 2px solid rgb(71, 65, 141);
-
-
-        }
-    </style>
-
 </head>
 
 <body ondragstart="return false" oncopy="return false;">
@@ -175,72 +77,63 @@
 
 
 
-    <div style="width:1200px; background-color: rgb(255, 255, 255);margin: auto;">
+    <div class="item-container">
 
-        <div pid='1004'
-            style="width:1200px; background-color: rgb(141, 0, 0);margin: auto;margin-top: 55px;display: flex;">
-
-            <div style="width:450px;padding: 15px; background-color: aqua;">
-
+        <div pid='1004' class="item-container-a">
+            <div class="item-container-left">
                 <div>
-                    <div style="width: 450px;">
-                        <img id="main-img" src="../pic/Bear.svg"
-                            style="width: 450px;height: 450px;background-color: #ffffff;" alt="">
+                    <div class="item-container-left-a">
+                        <img id="main-img" class="item-container-left-a-img" src="../pic/Bear.svg" alt="">
                     </div>
-                    <div class="imgs"
-                        style="width: 450px;height: 95px;background-color: yellowgreen;margin: auto;overflow:hidden; display: flex; align-items: center;margin-top: 15px;">
+                    <div class="item-container-left-b">
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/apple.svg"
-                            id="view-img-1" style="width: 89px;height: 91px;" />
+                            id="view-img-1" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/visa-b.png"
-                            id="view-img-2" style="width: 89px;height: 91px;" />
+                            id="view-img-2" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/Shop_Car.svg"
-                            id="view-img-3" style="width: 89px;height: 91px;" />
+                            id="view-img-3" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/Bear.svg"
-                            id="view-img-4" style="width: 89px;height: 91px;" />
+                            id="view-img-4" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/Coupon.svg"
-                            id="view-img-5" style="width: 89px;height: 91px;" />
+                            id="view-img-5" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/fb-b.png"
-                            id="view-img-6" style="width: 89px;height: 91px;" />
+                            id="view-img-6" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/googleplay.svg"
-                            id="view-img-7" style="width: 89px;height: 91px;" />
+                            id="view-img-7" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/FB.svg"
-                            id="view-img-8" style="width: 89px;height: 91px;" />
+                            id="view-img-8" />
                         <img onmouseover="mousehover_img(this)" onclick="view_img(this)" src="../pic/Bear.svg"
-                            id="view-img-9" style="width: 89px;height: 91px;" />
+                            id="view-img-9" />
                     </div>
-                    <div onclick="pre()" style="height: 50px;width: 50px;display: flex;float: left; margin-top: -70px;">
-                        <div class="arrow-left" style="cursor:pointer;margin-left: 8px ;">
+                    <div class="item-container-left-pre" onclick="pre()">
+                        <div class="arrow-left">
                         </div>
                     </div>
 
-                    <div onclick="nex()"
-                        style="height: 50px;width: 50px;display: flex; float: right;margin-top: -70px;">
-
-                        <div class="arrow-right" style="cursor:pointer;margin-right: 8px;">
+                    <div class="item-container-left-nex" onclick="nex()">
+                        <div class="arrow-right">
                         </div>
                     </div>
                 </div>
 
 
 
-                <div
-                    style="width: 450px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 185px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
+                <div class="item-container-left-c">
+                    <div class="item-container-left-c-a">
                         <div>分享:</div>
-                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        <div><img src="../pic/FB.svg" alt="">
                         </div>
-                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        <div><img src="../pic/FB.svg" alt="">
                         </div>
-                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        <div><img src="../pic/FB.svg" alt="">
                         </div>
-                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        <div><img src="../pic/FB.svg" alt="">
                         </div>
-                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        <div><img src="../pic/FB.svg" alt="">
                         </div>
                     </div>
-                    <div style="width: 203px; display: flex;justify-content: center;">
-                        <div><img src="../pic/FB.svg" style="width: 23px; margin: 0px 10px;" alt=""></div>
+                    <div class="item-container-left-d">
+                        <div><img src="../pic/FB.svg" alt=""></div>
                         <div>喜歡</div>
                         <div>(變數)</div>
                     </div>
@@ -248,162 +141,117 @@
 
 
             </div>
-            <div style="width: 665px;background-color: blueviolet; padding: 20px 35px 0px 20px;">
-                <div style="width: 665px;height: 48px; background-color: aqua;display: flex;">
-                    <strong style="background-color: #ffbb55; width: 665px;">
+            <div class="item-container-right">
+                <div class="item-container-right-a">
+                    <strong>
                         花崗大理石 保護殼套 MacBook Pro Air 11 12 13 15 16 Mac 殼 筆電殼 防摔 注音鍵盤膜
                         16 Mac 殼 筆電殼 防摔 注音鍵盤膜
                     </strong>
                 </div>
 
-                <div
-                    style="width: 665px;height: 48px; background-color: aqua; margin-top: 15px; display: flex;align-items: center;">
-                    <div
-                        style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;">
-                        <div
-                            style="width: 185px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);">
-                            <div>分享:</div>
-                            <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
-                            </div>
-                            <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
-                            </div>
-                            <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
-                            </div>
-                            <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
-                            </div>
-                            <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
-                            </div>
+                <div class="item-container-right-b">
+                    <div class="item-container-right-b-a">
+                        <div>(星星)</div>
+                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
                         </div>
-                        <div style="width: 150px; display: flex;justify-content: center;background-color: burlywood;">
-                            <div><img src="../pic/FB.svg" style="width: 23px; margin: 0px 10px;" alt=""></div>
-                            <div>喜歡</div>
-                            <div>(變數)</div>
+                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
                         </div>
-                        <div style="width: 200px; display: flex;justify-content: center;background-color: burlywood;">
-                            <div><img src="../pic/FB.svg" style="width: 23px; margin: 0px 10px;" alt=""></div>
-                            <div>喜歡</div>
-                            <div>(變數)</div>
+                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        </div>
+                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
+                        </div>
+                        <div><img src="../pic/FB.svg" style="width: 23px;height:23px;margin-left: 5px ;" alt="">
                         </div>
                     </div>
-                </div>
-
-
-                <div
-                    style="width: 625px; height: 36px;background-color: violet; display: flex; align-items: center;margin-top: 15px;padding: 15px 0px">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);display: flex;align-items: center;">
-                        <div>$199 - $599 </div>
-                        <div id="item-price" style="font-size: 40px;margin: 0px 10px;">400</div>
-                        <div>2.5折</div>
-
+                    <div class="item-container-right-b-b">
+                        <div><img src="../pic/FB.svg"alt=""></div>
+                        <div>評價</div>
+                        <div>(變數)</div>
                     </div>
-
-                </div>
-
-
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;">賣場折價券</div>
-                        <div style="background-color: orange;margin-right: 10px;">現折$5元</div>
-                        <div style="background-color: orange;margin-right: 10px;">現折$10元</div>
-                        <div style="background-color: orange;margin-right: 10px;">現折$15元</div>
-                        <div style="background-color: orange;margin-right: 10px;">現折$20元</div>
-                    </div>
-
-                </div>
-
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;">加價購</div>
-                        <div style="background-color: orange;margin-right: 10px;">加價購</div>
-
-                    </div>
-
-
-
-                </div>
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;">運送</div>
-                        <div style="background-color: orange;margin-right: 10px;">免運費</div>
+                    <div class="item-container-right-b-b">
+                        <div><img src="../pic/FB.svg" alt=""></div>
+                        <div>已售出</div>
+                        <div>(變數)</div>
                     </div>
                 </div>
 
 
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;"></div>
-                        <div style="width: 110px; background-color: orange;margin-right: 10px;">運費</div>
-                        <div style="width: 100px; background-color: orange;margin-right: 10px;display: flex;">
-                            <div>$0-$70</div>
-                            <div class="arrow-down" style="margin-left:10px;margin-top: 1px;">
-                            </div>
+                <div class="item-container-right-c">
+                    <div>$199 - $599 </div>
+                    <div id="item-price">400</div>
+                    <div>2.5折</div>
+                </div>
+
+
+                <div class="item-container-right-d">
+                    <div class="item-container-right-d-a">賣場折價券</div>
+                    <div>現折$5元</div>
+                    <div>現折$10元</div>
+                    <div>現折$15元</div>
+                    <div>現折$20元</div>
+                </div>
+
+                <div class="item-container-right-e">
+
+                    <div class="item-container-right-e-a">加價購</div>
+                    <div>加價購</div>
+
+
+
+
+
+                </div>
+                <div class="item-container-right-f">
+
+                    <div class="item-container-right-f-a">運送</div>
+                    <div>免運費</div>
+                </div>
+                <div class="item-container-right-g">
+                    <div class="item-container-right-g-a"></div>
+                    <div class="item-container-right-g-b">運費</div>
+                    <div class="item-container-right-g-c">
+                        <div>$0-$70</div>
+                        <div class="arrow-down">
                         </div>
                     </div>
                 </div>
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;">運送</div>
-                        <div style="background-color: orange;margin-right: 10px;">免運費</div>
-                    </div>
+                <div class="item-container-right-h">
+
+                    <div class="item-container-right-h-a">運送</div>
+                    <div>免運費</div>
                 </div>
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <div style="width: 110px; background-color: blueviolet;">型號</div>
-                        <button onclick="type_a_price()" style="margin-right: 10px;">Ａ型</button>
-                        <button onclick="type_b_price()" style="margin-right: 10px;">Ｂ型</button>
-                    </div>
+                <div class="item-container-right-i">
+
+                    <div class="item-container-right-i-a">型號</div>
+                    <button onclick="type_a_price()" style="margin-right: 10px;">Ａ型</button>
+                    <button onclick="type_b_price()" style="margin-right: 10px;">Ｂ型</button>
                 </div>
 
 
-                <div
-                    style="width: 665px; height: 30px;background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;align-items: center;">
-                        <div style="width: 110px; background-color: blueviolet;">數量</div>
-                        <div
-                            style="width: 110px;height: 30px; background-color: orange;margin-right: 10px;display: flex;">
-                            <button onclick="item_minus()" style="width:33%;">-</button>
-                            <input id="item-input-qty" type="text" readonly style="width:33%;text-align: center;"
-                                value="1">
-                            <button onclick="item_plus()" style="width: 33%;">+</button>
-                        </div>
-                        <div style="background-color: orange;margin-right: 10px; font-size: 10px;">還剩（變數）件</div>
+                <div class="item-container-right-j">
+                    <div class="item-container-right-j-a">數量</div>
+                    <div class="item-container-right-plus">
+                        <button onclick="item_minus()">-</button>
+                        <input id="item-input-qty" type="text" readonly value="1">
+                        <button onclick="item_plus()">+</button>
                     </div>
+                    <div class="item-container-right-j-b">還剩（變數）件</div>
                 </div>
 
 
 
 
-                <div
-                    style="width: 665px;height: 30px; background-color: violet; display: flex; align-items: center;margin-top: 15px;">
-                    <div
-                        style="width: 665px; background-color: #ffffff;display: flex;border-right: 1px solid rgba(150, 150, 150, 0.3);padding: 0px 30px;">
-                        <button id="item-cart-count-check" onclick="item_cart_count_check()"
-                            class="item-cart-btn-join">加入購物車</button>
-                        <button class="item-cart-btn-buy">直接購買</button>
-                    </div>
+                <div class="item-container-right-k">
+                    <button id="item-cart-count-check" onclick="item_cart_count_check()"
+                        class="item-cart-btn-join">加入購物車</button>
+                    <button class="item-cart-btn-buy">直接購買</button>
                 </div>
             </div>
         </div>
-        <div style="background-color: rgb(255, 0, 0);width:1400px;margin: auto;">
-            <div id="success-msg"
-                style="display: flex; justify-content: center;position: fixed; align-items: center;margin-top: -550px;margin-left: 500px;z-index: -1;">
-                <div style="display: flex;align-items: center;justify-content: center;">
-                    <div
-                        style="background-color: rgb(255, 255, 255);width: 300px;display: flex;align-items: center;justify-content: center;flex-direction: column;border-radius: 10px;">
+        <div class="insert-cart-animation">
+            <div id="success-msg">
+                <div class="insert-cart-animation-a">
+                    <div class="insert-cart-animation-a-a">
                         <img src="../pic/tick.png" alt="">
                         <div>成功加入購物車！</div>
                     </div>
@@ -411,74 +259,69 @@
             </div>
         </div>
     </div>
-    <div style="width: 1200px; margin: auto;">
-        <div class="seller">
-            <div style="width: 40%; display: flex;align-items: center;border-right: 1px solid  rgb(187, 187, 187);">
-                <img src="../pic/Bear.svg" style="background-color: brown; width: 80px;float: left; border-radius:999em;"
-                    alt="">
+    <div class="item-seller">
+        <div class="item-seller-a">
+            <div class="item-seller-a-a">
+                <img src="../pic/Bear.svg" alt="">
 
-                <div style="display: flex;  flex-direction: column;width: 100%; margin-left: 10px;">
+                <div class="item-seller-a-a-a">
                     <div>Bear555</div>
-                    <div style="display: flex;">
+                    <div class="item-seller-a-a-a-a">
                         <div>????</div>
                         <div>分鐘前上線</div>
                     </div>
 
-                    <div style="margin-top: 10px;">
-                        <a href=""><button style="height: 34px;">聊聊</button></a>
-                        <a href=""><button style="height: 34px;width: 100px;">查看賣場</button></a>
+                    <div class="item-seller-a-a-a-b">
+                        <a href=""><button class="item-seller-a-a-a-b-a" style="height: 34px;">聊聊</button></a>
+                        <a href=""><button class="item-seller-a-a-a-b-b" style="height: 34px;width: 100px;">查看賣場</button></a>
                     </div>
                 </div>
-
-
-
             </div>
-            <div style="width: 60%;display: flex;padding: 0px 0px 0px 55px;">
 
-
-                <div style="width: 33%;">
-                    <div style="display: flex; align-items: center;">
+            <div class="item-seller-b">
+                <div  class="item-seller-b-a">
+                    <div  class="item-seller-b-a-a">
                         <div>商品評價</div>
-                        <div style="margin-left: 10px;"><a href="">9999</a> </div>
+                        <div class="item-seller-b-a-a-a"><a href="">9999</a> </div>
                     </div><br>
-                    <div style="display: flex; align-items: center;">
+                    <div  class="item-seller-b-a-a" >
                         <div>商品</div>
-                        <div style="margin-left: 10px;"><a href="">9999</a> </div>
+                        <div class="item-seller-b-a-a-a"><a href="">9999</a> </div>
                     </div>
 
                 </div>
                 <div style="width: 33%;">
-                    <div style="display: flex; align-items: center;">
+                    <div class="item-seller-b-a-a">
                         <div>聊聊回應率</div>
-                        <div style="margin-left: 10px;">
-                            <a href="" style="display: inline-flex;">
+                        <div class="item-seller-b-a-a-a">
+                            <a href="">
                                 <div>100</div>
                                 <div>%</div>
                             </a>
                         </div>
                     </div><br>
-                    <div style="display: flex; align-items: center;">
+                    <div class="item-seller-b-a-a">
                         <div>回應速度</div>
-                        <div style="margin-left: 10px;">
-                            <a href="" style="pointer-events: none;">
+                        <div class="item-seller-b-a-a-a">
+                            <a href="">
                                 <div>幾小時以內</div>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div style="display: flex; align-items: center;">
+                    <div class="item-seller-b-a-a">
                         <div>加入時間</div>
-                        <div style="margin-left: 10px;">
-                            <a href="" style="display: inline-flex;pointer-events: none;">
+                        <div class="item-seller-b-a-a-a">
+                            <a href="">
                                 <div>9999</div>
                                 <div>個月 前</div>
                             </a>
                         </div>
                     </div><br>
-                    <div style="display: flex; align-items: center;pointer-events: none;">
+                    <div class="item-seller-b-a-a">
                         <div>粉絲</div>
-                        <div style="margin-left: 10px;"><a href="">9999</a> </div>
+                        <div class="item-seller-b-a-a-a"><a href="">9999</a> </div>
                     </div>
                 </div>
 
@@ -488,30 +331,29 @@
 
 
 
-        <div style="background-color: white; width: 1200px;margin-top: 15px;">
-            <div style="padding: 25px;">
-                <div style="background-color: rgb(245, 245, 245);height: 40px;display: flex;align-items: center;">商品規格
+        <div class="item-seller-c">
+            <div  class="item-seller-c-a">
+                <div  class="item-seller-c-a-a">商品規格
                 </div><br>
-                <div style="display: flex;">
-                    <div style="width: 10%;">品牌</div>
+                <div class="item-seller-c-a-a-a">
+                    <div class="item-seller-c-a-a-a-a">品牌</div>
                     <div>熊熊牌</div>
                 </div><br>
 
-                <div style="display: flex;">
-                    <div style="width: 10%;">商品數量</div>
+                <div class="item-seller-c-a-a-a">
+                    <div class="item-seller-c-a-a-a-a">商品數量</div>
                     <div>1</div>
                 </div><br>
 
-                <div style="display: flex;">
-                    <div style="width: 10%;">出貨地</div>
+                <div class="item-seller-c-a-a-a">
+                    <div class="item-seller-c-a-a-a-a">出貨地</div>
                     <div>台中市</div><br>
                 </div>
             </div>
-            <div style="padding: 25px;">
-                <div style="background-color: rgb(245, 245, 245);height: 40px;display: flex;align-items: center;">商品詳情
+            <div class="item-seller-c-a">
+                <div class="item-seller-c-a-a">商品詳情
                 </div>
-
-                <span style="white-space:pre-line;">
+                <span >
                     二手無盒 品項八成新 功能正常
                     會以「雙層」泡泡袋妥善包裝後裝箱寄出
                     有現貨，可直接下標，會儘速寄出
@@ -525,13 +367,11 @@
         </div>
 
 
-        <div style="background-color: white; width: 1200px;margin-top: 15px;">
-
-
-            <div style="padding: 25px;">
-                <div style="background-color: rgb(245, 245, 245); height: 40px;display: flex;align-items: center;">商品評價
+        <div class="item-seller-d">
+            <div class="item-seller-d-a">
+                <div class="item-seller-d-a-a">商品評價
                 </div><br>
-                <div style="height: 400px;display: flex;align-items: center;justify-content: center;">
+                <div class="item-seller-d-a-b">
                     <div>尚無評論</div>
                 </div>
             </div>
