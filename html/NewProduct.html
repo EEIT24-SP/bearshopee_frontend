@@ -22,10 +22,11 @@
             </div>
         </div>
         <div class="header-navbar-right">
-            <div class="head-account"><img src="/pic/counter_pics/bear.png" alt=""><span>account1234</span></div>
+            <div class="head-account"><img src="/pic/bear.png" alt=""><span>account1234</span></div>
             <div class="logout"><span>登出</span></div>
         </div>
     </div>
+    <form action="/New.Product" method="GET">
     <div class="basic-information-container">
             <div class="basic-information-title">基本資訊</div>
             <div class="basic-information-container-middle">
@@ -124,9 +125,11 @@
                 <div class="basic-information-name-container">
                     <div class="basic-information-name">商品名稱</div>
                     <div class="input-container">
-                        <input type="text" placeholder="請輸入" id="product-name" size="large">
+                        <input type="text" placeholder="請輸入" maxlength="50" id="product-name" size="large">
+                        <div class="input-distinct"><span class="input-length">0</span>/50</div>
                     </div>
                 </div>
+                <span class="msg">商品名稱不能為空白</span>
                 <div class="basic-information-description-container">
                     <div class="basic-information-name">商品描述</div>
                     <div class="input-container">
@@ -141,8 +144,8 @@
                 </div>
                 
             </div>
-        <div class="basic-information-title">銷售資訊</div>
-        <div class="basic-information-container-middle">
+            <div class="basic-information-title">銷售資訊</div>
+            <div class="basic-information-container-middle">
             <div class="basic-information-sale-container">
                 <div class="basic-information-name">商品價格</div>
                 <div class="input-container">
@@ -161,14 +164,14 @@
                     <div class="specification-container-middle-name">
                         <div class="basic-information-specification">商品規格名稱</div>
                         <div class="input-container-specification">
-                            <input type="text" name="" placeholder="請輸入規格名稱" id="product-specification-first-name">
+                            <input type="text"  maxlength="14" placeholder="請輸入規格名稱" id="product-specification-first-name">
                         </div>
                     </div>
                     <div class="specification-container-middle-options">
                         <div class="basic-information-specification">選項</div>
                         <div class="basic-information-specification-middle-first">
                             <div class="input-container-specification">
-                                <input type="text" name="" placeholder="請輸入選項" class="product-specification-first-type">                            
+                                <input type="text"  maxlength="20" placeholder="請輸入選項" class="product-specification-first-type">                            
                             </div>                        
                         </div>
                     </div>
@@ -181,14 +184,14 @@
                     <div class="specification-container-middle-name">
                         <div class="basic-information-specification">商品規格名稱</div>
                         <div class="input-container-specification">
-                            <input type="text" name="" placeholder="請輸入規格名稱" id="product-specification-second-name">
+                            <input type="text" maxlength="14" placeholder="請輸入規格名稱" id="product-specification-second-name">
                         </div>
                     </div>
                     <div class="specification-container-middle-options">
                         <div class="basic-information-specification">選項</div>
                         <div class="basic-information-specification-middle-second">
                             <div class="input-container-specification">
-                                <input type="text" name="" placeholder="請輸入選項" class="product-specification-second-type">
+                                <input type="text" maxlength="20" placeholder="請輸入選項" class="product-specification-second-type">
                             </div>                        
                         </div>
                     </div>
@@ -197,18 +200,18 @@
             </div>
         </div>
     </div>
+</form>
     <div class="fixholder">
-
     </div>
     <div class="submit-container fixbottom">
         <div>
             <button class="cancle-submit">取消</button>
-            <button class="onsale-submit">上架</button>
+            <button class="onsale-submit" type="submit">上架</button>
         </div>
     </div>
-
-
-
-
+    
+    </form>
+    
+    
 </body>
 </html>
