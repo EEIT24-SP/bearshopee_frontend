@@ -160,12 +160,7 @@ td {
     margin: auto;
 }
 
-.footer-table {
-    margin: auto;
-    width: 1200px;
-    border-spacing: 15px;
-    text-align: left;
-}
+
 
 .footer-footer {
     display: flex;
@@ -189,6 +184,13 @@ td {
 
  width: 100%;
      margin: auto;
+}
+
+
+.footer-a{
+    width: 240px;
+    line-height: 35px;
+    font-size: 13px;
 }
 
 .footer-table-img {
@@ -294,7 +296,7 @@ td {
 }
 
 .main-page-container-middle {
-    width: 800px;
+    width: 1400px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -472,4 +474,8 @@ td {
 
 .indicator.active {
     background: red;
+}
+
+.footer-b{
+    display: flex;
 }

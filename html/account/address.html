@@ -169,21 +169,21 @@
                 </table>
             </div>
 
-            <div class="main-right-credit_card">
-                <div style="width: 90%;margin: auto;">
-                    <div class="main-right-credit_card-title">
-                        <div class="main-right-credit_card-title-desc">
-                            <span><b>我的信用卡</b></span> <br>
+            <div class="main-right-address">
+                <div class="main-right-address-a">
+                    <div class="main-right-address-title">
+                        <div class="main-right-address-title-desc">
+                            <span><b>我的地址</b></span> <br>
                         </div>
-                        <div style="display: flex;justify-content: flex-end;width: 50%;">
-                            <div style="height: 40px; display: flex; justify-content:center;align-items: center;">
+                        <div class="main-right-address-b">
+                            <div class="main-right-address-c">
                                 <div>
                                     <button class="main-right-profile-save-btn" onclick="add_market()">
-                                        <div style="color: white;"><span>+ 新增超商地址</span> 
+                                        <div><span>+ 新增超商地址</span>
                                         </div>
                                     </button>
                                     <button class="main-right-profile-save-btn" onclick="add_address()">
-                                        <div style="color: white;"><span>+ 新增地址</span> 
+                                        <div><span>+ 新增地址</span>
                                         </div>
                                     </button>
                                 </div>
@@ -192,33 +192,25 @@
                         </div>
                     </div>
 
-                    <div style="
-                    display: flex;
-                    justify-content: left;
-                    border-top: 1px solid rgb(225, 225, 225);
-                  ">
-                        <div style="width: 90%;margin:10px 0px;">
+                    <div class="main-right-address-container">
+                        <div class="main-right-address-container-a">
                             <div>
-                                <span style="margin: 5px 20px;">全名 </span>
+                                <span class="main-right-address-container-b">全名 </span>
                                 <span>XXX</span>
                             </div>
                             <div>
-                                <sapn style="margin: 5px 20px;">手機</sapn> <span>0919000000</span>
+                                <sapn class="main-right-address-container-b">手機</sapn> <span>0919000000</span>
                             </div>
-                            <div> <span style="margin: 5px 20px;">超商</span> <span> 全家草屯東寶店</span></div>
-                            <div> <span style="margin: 5px 20px;">地址</span> <span>南投縣草屯鎮虎山路７６６號１樓 全家草屯東寶店</span></div>
-
+                            <div> <span class="main-right-address-container-b">超商</span> <span> 全家草屯東寶店</span></div>
+                            <div> <span class="main-right-address-container-b">地址</span> <span>南投縣草屯鎮虎山路７６６號１樓
+                                    全家草屯東寶店</span></div>
                         </div>
-
-                        <div style="display: flex;justify-content: center; width: 10%;">
+                        <div class="main-right-address-container-c">
                             <div>
                                 刪除
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -230,7 +222,7 @@
 
         <div id="all_light-market" class="pop-up-window">
 
-            <div style="width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;">
+            <div class="pop-up-window-a" style="width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;">
                 <div id="content-market" class="pop-up-window-content">
                     <div style="width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
                         <div style="display: flex;height: 90%;width: 90%;flex-direction: column;">
@@ -347,9 +339,9 @@
 
 
                                     <div
-                                    style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
-                                    <input type="text" class="new_credit_card_input" placeholder="郵遞區號" />
-                                </div><br>
+                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        <input type="text" class="new_credit_card_input" placeholder="郵遞區號" />
+                                    </div><br>
 
 
                                     <div class="birth-month">
@@ -378,38 +370,38 @@
                                         style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
                                         <input type="text" class="new_credit_card_input" placeholder="街道樓層" />
                                     </div><br>
-                                   
-                                   
+
+
 
 
 
                                     <div
-                                    style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
-                                    <div style="width: 100%;">標記為:</div>
+                                        style="display: flex;justify-content: center;align-items: center;padding: 5px 0px;">
+                                        <div style="width: 100%;">標記為:</div>
 
-                                </div>
-                                <div
-                                    style="display: flex;justify-content:flex-start;align-items: center;padding: 5px 0px;">
-                                    <button style="width: 50px;height: 40px;">住家</button>
-                                    &emsp;
-                                    <button style="width: 50px;height: 40px;">公司</button>
-                                </div><br>
+                                    </div>
+                                    <div
+                                        style="display: flex;justify-content:flex-start;align-items: center;padding: 5px 0px;">
+                                        <button style="width: 50px;height: 40px;">住家</button>
+                                        &emsp;
+                                        <button style="width: 50px;height: 40px;">公司</button>
+                                    </div><br>
 
-                                <div
-                                style="display: flex;justify-content:flex-start;align-items: center;padding: 5px 0px;">
-                              
-                                <input type="checkbox"><span>設為預設值</span>
-                                &emsp;
-                                <input type="checkbox"><span>設為快遞取件地址</span>
-                                
-                            </div><br>
+                                    <div
+                                        style="display: flex;justify-content:flex-start;align-items: center;padding: 5px 0px;">
 
+                                        <input type="checkbox"><span>設為預設值</span>
+                                        &emsp;
+                                        <input type="checkbox"><span>設為快遞取件地址</span>
 
+                                    </div><br>
 
 
 
 
-                                
+
+
+
 
                                 </div>
                                 <br>
@@ -433,99 +425,97 @@
 
 
 
+    </div>
 
 
+    <br><br>
+    <hr class="main-page-container-hr" />
+    <br><br>
+    <div class="footer">
+        <div class="footer-b">
+            <div class="footer-a">
+                <div><b>客服中心</b></div>
+                <div>幫助中心</div>
+                <div>熊熊商城</div>
+                <div>付款方式</div>
+                <div>蝦幣</div>
+                <div>運費補助</div>
+                <div>退貨退款</div>
+                <div>延長訂單撥款</div>
+                <div>聯絡客服</div>
+                <div>防詐騙宣導</div>
 
-        <br><br>
-        <hr class="main-page-container-hr" />
-        <br><br>
-      
-        <div class="footer">
-          <div style="display: flex;">
-            <div style=" width: 240px;line-height: 35px;font-size: 13px;">
-              <div><b>客服中心</b></div>
-              <div>幫助中心</div>
-              <div>熊熊商城</div>
-              <div>付款方式</div>
-              <div>蝦幣</div>
-              <div>運費補助</div>
-              <div>退貨退款</div>
-              <div>延長訂單撥款</div>
-              <div>聯絡客服</div>
-              <div>防詐騙宣導</div>
-      
             </div>
-            <div style=" width: 240px;line-height: 35px;font-size: 13px;">
-              <div><b>關於熊熊</b></div>
-              <div>關於熊熊</div>
-              <div>加入我們</div>
-              <div>熊熊條款</div>
-              <div>隱私權政策</div>
-              <div>熊熊商城</div>
-              <div>賣家中心</div>
-              <div>限時特賣</div>
-              <div>聯絡媒體</div>
+            <div class="footer-a">
+                <div><b>關於熊熊</b></div>
+                <div>關於熊熊</div>
+                <div>加入我們</div>
+                <div>熊熊條款</div>
+                <div>隱私權政策</div>
+                <div>熊熊商城</div>
+                <div>賣家中心</div>
+                <div>限時特賣</div>
+                <div>聯絡媒體</div>
             </div>
-            <div style=" width: 240px;line-height: 35px;font-size: 13px;">
-              <div><b>付款</b></div>
-              <div><img src="../../pic/visa-b.png" style="width: 50px;" alt=""></div>
-              <div>物流合作</div>
-              <div><img src="" alt="">塞圖片</div>
+            <div class="footer-a">
+                <div><b>付款</b></div>
+                <div><img src="../../pic/visa-b.png" style="width: 50px;" alt=""></div>
+                <div>物流合作</div>
+                <div><img src="" alt="">塞圖片</div>
             </div>
-            <div style=" width: 240px;line-height: 35px;font-size: 13px;">
-              <div><b>關注我們</b></div>
-              <div> <img src="../../pic/fb-b.png" class="footer-table-img" alt=""> Facebook</div>
-              <div><img src="../../pic/ig-b.png" class="footer-table-img" alt=""> Instagram</div>
-              <div><img src="../../pic/line-b.png" class="footer-table-img" alt=""> Line</div>
-              <div><img src="../../pic/in-b.png" class="footer-table-img" alt=""> LinkedIn</div>
-              <div><img src="../../pic/bear-b.png" class="footer-table-img" alt=""> 熊熊輯部落格</div>
+            <div class="footer-a">
+                <div><b>關注我們</b></div>
+                <div> <img src="../../pic/fb-b.png" class="footer-table-img" alt=""> Facebook</div>
+                <div><img src="../../pic/ig-b.png" class="footer-table-img" alt=""> Instagram</div>
+                <div><img src="../../pic/line-b.png" class="footer-table-img" alt=""> Line</div>
+                <div><img src="../../pic/in-b.png" class="footer-table-img" alt=""> LinkedIn</div>
+                <div><img src="../../pic/bear-b.png" class="footer-table-img" alt=""> 熊熊輯部落格</div>
             </div>
-            <div style=" width: 240px;line-height: 35px;font-size: 13px;">
-              <div><b>下載熊熊</b></div>
-              <div>
-                <img src="../../pic/QRcode.png" class="footer-table-QRcode" alt="">
-              </div>
-              <div>
-                <img src="../../pic/apple.svg" class="footer-table-img" alt=""> Apple Store
-              </div>
-              <div>
-                <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
-              </div>
-              <div>
-                <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
-              </div>
-      
+            <div class="footer-a">
+                <div><b>下載熊熊</b></div>
+                <div>
+                    <img src="../../pic/QRcode.png" class="footer-table-QRcode" alt="">
+                </div>
+                <div>
+                    <img src="../../pic/apple.svg" class="footer-table-img" alt=""> Apple Store
+                </div>
+                <div>
+                    <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
+                </div>
+                <div>
+                    <img src="../../pic/googleplay.svg" class="footer-table-img" alt=""> Google Play
+                </div>
             </div>
-      
-          </div>
-          <hr>
-          <div class="footer-footer">
+        </div>
+        <hr>
+        <div class="footer-footer">
             <div class="footer-footer-copyright">© 2021 Bear. 版權所有。</div>
             <div>
-              國家和地區:
-              新加坡
-              印尼
-              台灣
-              泰國
-              馬來西亞
-              越南
-              菲律賓
-              巴西
+                國家和地區:
+                新加坡
+                印尼
+                台灣
+                泰國
+                馬來西亞
+                越南
+                菲律賓
+                巴西
             </div>
-      
-          </div>
+
         </div>
+    </div>
 
 
 
 
 
 
-        
-        <script type="text/javascript" src="../../js/index.js" defer></script>
-        <script type="text/javascript" src="../../js/server.js"></script>
-        <script src="../../js/user.js" defer></script>
-        <script src="../../js/change.js"></script>
+
+
+    <script type="text/javascript" src="../../js/index.js" defer></script>
+    <script type="text/javascript" src="../../js/server.js"></script>
+    <script src="../../js/user.js" defer></script>
+    <script src="../../js/change.js"></script>
 </body>
 
 </html>
