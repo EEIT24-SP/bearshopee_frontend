@@ -68,10 +68,6 @@ $(window).scroll(function () {
     }
 });
 
-document.getElementById("product-price").addEventListener("input",function(event){
-    event.target.value = event.target.value.replace(/\-/g,""); 
-});
-
 $('#product-price').on('keyup',function(e){
         this.value=this.value.replace(/[^0-9]/g,'')
         e.preventDefault();
@@ -87,4 +83,22 @@ $('#product-price').on('paste',function(e){
 })
 $('#product-count').on('paste',function(e){
         e.preventDefault();
+})
+
+$('#product-name').on('keyup',function(e){
+    e.preventDefault();
+    $(".msg").css("display", "none");
+    $(this).removeClass("border-red");
+
+    $(".input-length").text($("#product-name").val().length)
+})
+
+$("#product-name").blur(function () {
+    if ($(this).val() == null || $(this).val() == "") {
+        $(".msg").css("display", "block");
+        $(this).addClass("border-red");
+    } else if ($(this).change!=null || $(this).change == ""){
+    $(".msg").css("display", "none");
+    $(this).removeClass("border-red");
+}
 })
