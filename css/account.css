@@ -61,7 +61,7 @@ a:active {
 }
 
 .main {
-  width: 1400px;
+  width: 100%;
   background-color: rgba(245, 245, 245);
   margin: auto;
   display: flex;
@@ -109,8 +109,6 @@ a:active {
 
 .titles-list {
   /* display: inline-block; */
-  float: left;
-  flex-direction: column-reverse;
   height: 40px;
   width: 166px;
   padding: 10px 0px 0px 0px;
@@ -474,8 +472,6 @@ select {
   height: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(46, 46, 46, 0.3);
-  display: flex;
-  align-items: center; 
 }
 
 
