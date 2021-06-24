@@ -8,7 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/cart.css" />
 	<!--操作cookie的js文件-->
 	<script type="text/javascript" src="../js/cookie.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.4.1.js"></script>
+
 	<link rel="stylesheet" href="../css/Bear_Shop.css">
+
 </head>
 
 <body style="background-color:rgb(235, 235, 235);">
@@ -112,25 +115,22 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="cart-page-product">
-				<div class="cart-page-product-discount">
-					<span>贈品</span>
-					<div class="cart-page-product-discount-message">滿 $12,990 即可獲得 1 個贈品</div>
-					<a href="">查看></a>
-				</div>
+
 				<div class="cart-page-product-allitems">
-					<div>
+
+
+					<div style="display: flex;align-items: center;height: 80px;">
 						<input type="checkbox" class="cart-page-checkbox">
 						<img src="../pic/dogtest.jpg" alt="" class="product-img">
 						<div class="product-description-box">
 							<div>
-								<a href="../pic/dogtest.jpg"class="product-description">
+								<a href="../pic/dogtest.jpg" class="product-description">
 									這裡有隻超可愛的狗勾，我想來看看這隻狗勾，狗狗~，omgggggggggggggg
 								</a>
 							</div>
-							<span class="product-Stockup">較長備貨</span><br>
-							<span class="product-Soldout-text">你選擇的規格已售完，請選擇其他規格</span>
+
 						</div>
 						<div class="product-size">
 							<div class="product-size-button">
@@ -142,23 +142,19 @@
 							</div>
 						</div>
 						<div class="product-unit-price">
-							<span class="product-unit-price-Originalprice">123456</span>
-							<span>156151</span>
-							<div class="product-unit-price-update">
-								<div class="product-unit-price-discount">9折</div>
-								<div>已更新</div>
-							</div>
+							<input type="text" class="unit-price" value="1000">
 						</div>
 						<div class="product-quanftity">
 							<div>
-								<button>-</button>
-								<input type="text">
-								<button>+</button>
+								<button class="minus">-</button>
+								<input type="text" class="numcount" value="1">
+								<button type="button" class="plus">+</button>
 							</div>
 							<div>剩下10000件</div>
 						</div>
 						<div class="product-total-price-box">
-							<span class="product-total-price">$100</span>
+							<div>
+								<input class="product-total-price" value="1">
 						</div>
 						<div class="product-action">
 							<button class="product-action-delet">刪除</button>
@@ -167,115 +163,8 @@
 							</button>
 						</div>
 					</div>
-					<div>
-						<input type="checkbox" class="cart-page-checkbox">
-						<img src="../pic/dogtest.jpg" alt="" class="product-img">
-						<div class="product-description-box">
-							<div>
-								<a href="../pic/dogtest.jpg"
-									class="product-description">
-									這裡有隻超可愛的狗勾，我想來看看這隻狗勾，狗狗~，omgggggggggggggg
-								</a>
-							</div>
-							<span class="product-Stockup">較長備貨</span><br>
-							<span class="product-Soldout-text">你選擇的規格已售完，請選擇其他規格</span>
-						</div>
-						<div class="product-size">
-							<div class="product-size-button">
-								規格
-								<div class="product-size-button-icon"></div>
-							</div>
-							<div>
-								藍色XL
-							</div>
-						</div>
-						<div class="product-unit-price">
-							<span class="product-unit-price-Originalprice">123456</span>
-							<span>156151</span>
-							<div class="product-unit-price-update">
-								<div class="product-unit-price-discount">9折</div>
-								<div>已更新</div>
-							</div>
-						</div>
-						<div class="product-quanftity">
-							<div>
-								<button>-</button>
-								<input type="text">
-								<button>+</button>
-							</div>
-							<div>剩下10000件</div>
-						</div>
-						<div class="product-total-price-box">
-							<span class="product-total-price">$100</span>
-						</div>
-						<div class="product-action">
-							<button class="product-action-delet">刪除</button>
-							<button class="product-action-like">
-								<span>找相似<img src="../pic/triangle.svg" alt=""></span>
-							</button>
-						</div>
-					</div><div>
-						<input type="checkbox" class="cart-page-checkbox">
-						<img src="../pic/dogtest.jpg" alt="" class="product-img">
-						<div class="product-description-box">
-							<div>
-								<a href="../pic/dogtest.jpg"
-									class="product-description">
-									這裡有隻超可愛的狗勾，我想來看看這隻狗勾，狗狗~，omgggggggggggggg
-								</a>
-							</div>
-							<span class="product-Stockup">較長備貨</span><br>
-							<span class="product-Soldout-text">你選擇的規格已售完，請選擇其他規格</span>
-						</div>
-						<div class="product-size">
-							<div class="product-size-button">
-								規格
-								<div class="product-size-button-icon"></div>
-							</div>
-							<div>
-								藍色XL
-							</div>
-						</div>
-						<div class="product-unit-price">
-							<span class="product-unit-price-Originalprice">123456</span>
-							<span>156151</span>
-							<div class="product-unit-price-update">
-								<div class="product-unit-price-discount">9折</div>
-								<div>已更新</div>
-							</div>
-						</div>
-						<div class="product-quanftity">
-							<div>
-								<button>-</button>
-								<input type="text">
-								<button>+</button>
-							</div>
-							<div>剩下10000件</div>
-						</div>
-						<div class="product-total-price-box">
-							<span class="product-total-price">$100</span>
-						</div>
-						<div class="product-action">
-							<button class="product-action-delet">刪除</button>
-							<button class="product-action-like">
-								<span>找相似<img src="../pic/triangle.svg" alt=""></span>
-							</button>
-						</div>
-					</div>
+
 				</div>
-			</div>
-			<div class="cart-voucher">
-				<img src="../pic/ticket.png" alt="">
-				<div>
-					<div class="cart-voucher-message">最高 7.7 折</div>
-					<div class="cart-voucher-newvoucher">有新的折價券!</div>
-					<a href="" class="cart-voucher-moremessage">查看更多</a>
-				</div>
-			</div>
-            <div class="cart-shipping">
-				<img src="../pic/free-delivery.png" alt="">
-				<div class="cart-shipping-message" >訂單滿$99，蝦皮海外 - 萊爾富（空運） 免運費</div>
-				<span class="cart-shipping-more" style="color: blue;">了解更多</span>
 			</div>
 		</div>
 	</div>
@@ -439,12 +328,57 @@
 
 		</div>
 	</div>
+	<button class="property-value-first"></button>
+	<button class="property-value-first"></button>
+	<button class="property-value-first"></button>
+
 
 
 
 
 	<!--操作购物车页面的cart.js-->
 	<script src="../js/cart.js"></script>
+	<!-- <script>
+		$('.property-value-first').on("click", function () {
+			$('.property-value-first').removeClass('property-select');
+			$('.property-value-first').attr("name", "");
+			$(this).attr("name", "bear");
+			$(this).addClass('property-select');
+			$('.property-value-first').attr("value", "|${}|");
+		})
+	</script> -->
+
+
+	<script type="text/javascript">
+		$('.plus').on('click', function () {
+			var temp = $(this).parent().children('.numcount').prop('value');
+			$(this).parents().children('.numcount').prop('value', parseInt(temp) + 1);
+			var price = $(this).parents().children('.product-unit-price').children('.unit-price').val();
+			$(this).parents().children('.product-total-price-box').children('.product-total-price').prop('value', (parseInt(temp) * parseInt(price)));
+			var total = $(this).parents().children('.product-total-price-box').children('.product-total-price').prop('value');
+			console.log($(this).parents().children('.product-total-price-box'));
+			console.log($(this).parents().children('.product-unit-price').children('.unit-price').val());
+		})
+		$('.minus').on('click', function () {
+			var temp = $(this).parent().children('.numcount').val();
+			var total = $(this).parents().children('.product-total-price-box').children('.product-total-price').val();
+			var price = $(this).parents().children('.product-unit-price').children('.unit-price').val();
+			if (temp > 0) {
+				$(this).parents().children('.numcount').prop('value', parseInt(temp) - 1);
+				$(this).parents().children('.product-total-price-box').children('.product-total-price').prop('value', (parseInt(total) - parseInt(price)));
+			}
+			// var total = $(this).parents().children('.product-total-price-box').children('.product-total-price').prop('value');
+
+		})
+window.onload=function(){
+
+	var num1= parseInt( $('.unit-price').val());
+	var num2 =parseInt( $('.product-total-price').val());
+	console.log(num1*num2);
+}
+
+
+	</script>
 </body>
 
 </html>
